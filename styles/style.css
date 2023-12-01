@@ -7,6 +7,11 @@
 /* ESTILOS GENERALES*/
 
 /*Configuracion del nav*/
+header {
+	position:sticky;
+	top:0;
+	z-index:5;
+}
 .nav{
 	background-color:#000000;
 	color:#fff;
@@ -14,7 +19,7 @@
 	justify-content:space-between;
 	align-items:center;
 	margin-left:25px;
-	height:100px;
+	height:80px;
 }
 .nav a{ 
 	text-decoration: none;
@@ -25,12 +30,14 @@
 	display:flex;
 	gap:10px;
 	margin-right: 30px;
+	margin-top:20px;
 }
 .nav h1{
 	font-size:60px;
 	color:#ffffff;
 	font-family:'copperplate',fantasy;
 	letter-spacing:4px;
+	margin-top:5px;
 }
 
 /* CONFIGURACION DE ESTILOS DE EL FOOTER */
@@ -41,12 +48,13 @@ footer {
 	align-items:center;
 }
 
-footer div{
+footer .redes-sociales {
  	height:80px;
 	display:flex;
 	gap:40px;
+	justify-content:center;
 }
-footer div img{
+footer .redes-sociales img{
 	width:100%;
 	height:100%;
 	object-fit:scale-down;
@@ -64,8 +72,9 @@ footer div img{
 	display:flex;
 	gap:40px;
 }
-.copyright div a{
+.copyright div a h3{
 	color:rgba(230, 230, 230, 0.308);
+	font-size:17px;
 }
 
 /* CONFIGURACION DEL CAROUSEL DE BOOTSRAP
