@@ -77,6 +77,9 @@ footer .redes-sociales img{
 	color:rgba(230, 230, 230, 0.308);
 	font-size:17px;
 }
+.copyright div a {
+	text-decoration:none;
+}
 /* CONFIGURACION DEL CAROUSEL DE BOOTSRAP
 ESTILOS PISADOS */
 .carousel-item {
@@ -555,7 +558,110 @@ body{
 	grid-area:"info";
 }
 /*TAMAÑO DE LETRA DE ENCABEZADOS DE LA PAGINA PROFILE*/
-.copyright-terminos{
-	color:#ffffff;
-	text-decoration:none;
+.perfil-container{
+	margin:30px;
+	display:flex;
+	flex-direction:column;
+}
+.perfil__title-container{
+	display:flex;
+	gap:15px;
+	border-bottom:3px solid #ccc;
+	margin-bottom:20px;
+}
+.perfil__title-container h2 {
+	font-size:40px;
+	margin: 50px 0 20px 30px;
+	letter-spacing:4px;
+}
+.perfil__title-container b {
+	margin: 64px 0 20px 2px;
+	color:rgba(172, 172, 172, 0.897);
+}
+.perfil__info-container {
+	border: 3px solid #ccc;
+	padding:10px 20px;
+	border-radius:15px 0 15px 0;
+}
+.perfil__info-username-container {
+	display:flex;
+	justify-content:space-between;
+	align-items:end;
+	margin-top:10px;
+}
+.perfil__info-username-container h3 {
+	border:3px solid #ccc;
+	padding:10px;
+	margin: 0 15px 0 0; 
+	border-radius: 15px 0 15px 0;
+	width:22%;
+}
+.perfil__info-username-container b {
+	border-bottom:3px dashed rgba(172, 172, 172, 0.897);
+	padding-bottom:2px;
+	width:78%;
+	text-align:center;
+}
+.perfil__info-email-container {
+	display:flex;
+	justify-content:space-between;
+	align-items:end;
+	margin-top:40px;
+}
+.perfil__info-email-container h3 {
+	border: 3px solid #ccc;
+	padding:10px;
+	margin: 0 15px 0 0;
+	border-radius:15px 0 15px 0;
+	width:22%;
+}
+.perfil__info-email-container b {
+	border-bottom: 3px dashed rgba(172, 172, 172, 0.897);
+	padding-bottom:2px;
+	width:78%;
+	text-align:center;
+}
+.perfil__info-password-container {
+	display:flex;
+	justify-content:space-between;
+	align-items:end;
+	margin: 40px 0 10px 0;
+}
+.perfil__info-password-container h3 {
+	border:3px solid #ccc;
+	padding:10px;
+	margin: 0 15px 0 0; 
+	border-radius:15px 0 15px 0;
+	width:22%;
+}
+.perfil__info-password-container b {
+	border-bottom: 3px dashed rgba(172, 172, 172, 0.897);
+	padding-bottom:2px;
+	width:78%;
+	text-align:center;
+}
+.sign-up-container {
+	display:flex;
+	justify-content:center;
+	gap:20px;
+	margin:17px 0;
+}
+.ordenes__title {
+	text-align:right;
+	font-size:40px;
+	margin: 20px 30px;
+	letter-spacing:4px;
+	border-bottom:3px solid #ccc;
+	padding-bottom:20px;
+}
+.ordenes__info-container {
+	margin:30px 0 10px 30px;
+	display:grid;
+	grid-template-columns:300px 200px 500px 800px;
+	grid-template-rows:150px repeat(3,100px);
+}
+.ordenes__info-container h3 {
+	border-left: 3px solid #fff;
+	align-self:center;
+	padding-left:30px;
 }
