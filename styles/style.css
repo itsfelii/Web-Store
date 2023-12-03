@@ -1,8 +1,9 @@
 /*Configuracion de la letra de la pagina*/
 *{
-	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-family:'Nova Square', sans-serif;
 	font-size:20px;
 	font-weight: 80px;
+	letter-spacing:2px;
 }
 /* Reset de estilos predeterminados */
 *{
@@ -15,7 +16,7 @@ header {
 	position:sticky;
 	top:0;
 	z-index:5;
-	background-color:#000;
+	background-color:#000000;
 }
 .nav{
 	color:#fff;
@@ -91,18 +92,18 @@ ESTILOS PISADOS */
 	object-fit:scale-down;
 }
 .carousel h2{
-	font-size:40px;
-	margin:30px;
-	letter-spacing:4px;
+	font-size:60px;
+	margin:60px 30px;
+	letter-spacing:10px;
 }
 /*CONFIGURACION DE EL FONDO DE LA PAGINA*/
 body{
-	background-color:#000000;
+	background-color:#0e0e10;
 	color:#fff;
 }
 /*CONFIGURACION DE LA ETIQUTA DE PRECIO DE TODAS LAS PAGINAS*/
 .precio {
-	color:#f00;
+	color:#D9534F;
 }
 /* ESTILOS ESPECIFICOS */
 /* ESTILOS ESPECIFICOS DE LA PAGINA INDEX*/
@@ -112,9 +113,9 @@ body{
 }
 .ofertas h2{
 	text-align:right;
-	font-size:40px;
+	font-size:60px;
 	margin-right:60px;
-	letter-spacing:4px;
+	letter-spacing:10px;
 }
 .ofertas__item-container {
 	display:grid;
@@ -134,11 +135,24 @@ body{
 	width:100%;
 	height:100%;
 	object-fit:cover;
+	border-radius:25px 0;
+	border-bottom: 5px solid #738F40;
+	border-right:5px solid #738F40;
 }
 .ofertas__item-box-1-info {
 	position: relative;
-	bottom:30px;
-	left:60px;
+	text-align:center;
+	top:-40px;
+}
+.ofertas__item-box-1-info label {
+	font-size:30px;
+	text-shadow:1px 1px 10px #fff;
+}
+.ofertas__item-box-1-info b {
+	position:absolute;
+	bottom:340px;
+	font-size:40px;
+	right:30px;
 }
 .ofertas__item-box-2{
 	height:400px;
@@ -147,11 +161,24 @@ body{
 	width:100%;
 	height:100%;
 	object-fit:cover;
+	border-radius:25px 0;
+	border-bottom: 5px solid #738F40;
+	border-right:5px solid #738F40;
 }
 .ofertas__item-box-2-info {
 	position: relative;
-	bottom:30px;
-	left:60px;
+	text-align:center;
+	top:-40px;
+}
+.ofertas__item-box-2-info label {
+	font-size:30px;
+	text-shadow:1px 1px 10px #fff;
+}
+.ofertas__item-box-2-info b {
+	position:absolute;
+	bottom:340px;
+	font-size:40px;
+	right:30px;
 }
 .ofertas__item-box-3{
 	height:400px;
@@ -160,11 +187,24 @@ body{
 	width:100%;
 	height:100%;
 	object-fit:cover;
+	border-radius:25px 0;
+	border-bottom: 5px solid #738F40;
+	border-right:5px solid #738F40;
 }
 .ofertas__item-box-3-info {
 	position: relative;
-	bottom:30px;
-	left:60px;
+	text-align:center;
+	top:-40px;
+}
+.ofertas__item-box-3-info label {
+	font-size:30px;
+	text-shadow:1px 1px 10px #fff;
+}
+.ofertas__item-box-3-info b {
+	position:absolute;
+	bottom:340px;
+	font-size:40px;
+	right:30px;
 }
 .ofertas__item-box-4{
 	height:400px;
@@ -173,11 +213,24 @@ body{
 	width:100%;
 	height:100%;
 	object-fit:cover;
+	border-radius:25px 0;
+	border-bottom: 5px solid #738F40;
+	border-right:5px solid #738F40;
 }
 .ofertas__item-box-4-info {
 	position: relative;
-	bottom:30px;
-	left:60px;
+	text-align:center;
+	top:-40px;
+}
+.ofertas__item-box-4-info label {
+	font-size:30px;
+	text-shadow:1px 1px 10px #ffffff;
+}
+.ofertas__item-box-4-info b {
+	position:absolute;
+	bottom:340px;
+	font-size:40px;
+	right:30px;
 }
 /* ESTILOS ESPECIFICOS DE LA PAGINA MEN */
 /* ESTILOS DE LA SECCION DE BUZOS */
@@ -186,9 +239,9 @@ body{
 }
 .h-buzos h2{
 	text-align:right;
-	font-size:40px;
-	margin-right:60px;
-	letter-spacing:4px;
+	font-size:60px;
+	margin-right:30px;
+	letter-spacing:10px;
 }
 .h-buzos__item-container {
 	display:grid;
@@ -208,13 +261,25 @@ body{
 	width:100%;
 	height:100%;
 	object-fit:cover;
+	border-radius:25px 0;
+	border-bottom: 5px solid #FFD700;
+	border-right:5px solid #FFD700;
 }
 .h-buzos__item-box-1-info {
 	position: relative;
-	bottom:30px;
-	left:60px;
+	text-align:center;
+	top:-40px;
 }
-
+.h-buzos__item-box-1-info label {
+	font-size:30px;
+	text-shadow:1px 1px 10px #fff;
+}
+.h-buzos__item-box-1-info b {
+	position:absolute;
+	bottom:340px;
+	font-size:40px;
+	right:30px;
+}
 .h-buzos__item-box-2{
 	height:400px;
 }
@@ -222,11 +287,24 @@ body{
 	width:100%;
 	height:100%;
 	object-fit:cover;
+	border-radius:25px 0;
+	border-bottom: 5px solid #FFD700;
+	border-right:5px solid #FFD700;
 }
 .h-buzos__item-box-2-info {
 	position: relative;
-	bottom:30px;
-	left:60px;
+	text-align:center;
+	top:-40px;
+}
+.h-buzos__item-box-2-info label {
+	font-size:30px;
+	text-shadow:1px 1px 10px #fff;
+}
+.h-buzos__item-box-2-info b {
+	position:absolute;
+	bottom:340px;
+	font-size:40px;
+	right:30px;
 }
 
 .h-buzos__item-box-3{
@@ -236,11 +314,24 @@ body{
 	width:100%;
 	height:100%;
 	object-fit:cover;
+	border-radius:25px 0;
+	border-bottom: 5px solid #FFD700;
+	border-right:5px solid #FFD700;
 }
 .h-buzos__item-box-3-info {
 	position: relative;
-	bottom:30px;
-	left:60px;
+	text-align:center;
+	top:-40px;
+}
+.h-buzos__item-box-3-info label {
+	font-size:30px;
+	text-shadow:1px 1px 10px #fff;
+}
+.h-buzos__item-box-3-info b {
+	position:absolute;
+	bottom:340px;
+	font-size:40px;
+	right:30px;
 }
 
 .h-buzos__item-box-4{
@@ -250,18 +341,31 @@ body{
 	width:100%;
 	height:100%;
 	object-fit:cover;
+	border-radius:25px 0;
+	border-bottom: 5px solid #FFD700;
+	border-right:5px solid #FFD700;
 }
 .h-buzos__item-box-4-info {
 	position: relative;
-	bottom:30px;
-	left:60px;
+	text-align:center;
+	top:-40px;
+}
+.h-buzos__item-box-4-info label {
+	font-size:30px;
+	text-shadow:1px 1px 10px #fff;
+}
+.h-buzos__item-box-4-info b {
+	position:absolute;
+	bottom:340px;
+	font-size:40px;
+	right:30px;
 }
 
 /* ESTILOS DE LA SECCION REMERAS */
 .h-remeras h2{
-	font-size:40px;
+	font-size:60px;
 	margin: 50px 0 50px 30px;
-	letter-spacing:4px;
+	letter-spacing:10px;
 }
 .h-remeras__item-container {
 	display:flex;
@@ -285,9 +389,19 @@ body{
 	width:400px;
 	object-fit:cover;
 	grid-area:"img";
+	border-radius:25px 0;
+	border-bottom: 5px solid #738F40;
+	border-right:5px solid #738F40;
 }
 .h-remeras__item-box-1-info {
 	grid-area: "info";
+}
+.h-remeras__item-box-1-info h3 {
+	font-size:40px;
+	text-shadow:1px 1px 10px #fff;
+}
+.h-remeras__item-box-1-info b {
+	font-size: 30px;
 }
 
 .h-remeras__item-box-2 {
@@ -305,16 +419,26 @@ body{
 	width:400px;
 	object-fit:cover;
 	grid-area: "img";
+	border-radius:25px 0;
+	border-bottom: 5px solid #738F40;
+	border-right:5px solid #738F40;
 }
 .h-remeras__item-box-2-info {
 	grid-area:"info";
 }
+.h-remeras__item-box-2-info h3{
+	font-size:40px;
+	text-shadow:1px 1px 10px #fff;
+}
+.h-remeras__item-box-2-info b {
+	font-size:30px;
+}
 /* ESTILOS ESPECIFICOS DE LA PAGINA CHILDS*/
 /* ESTILOS DE LA SECCION REMERAS */
 .n-remeras h2{
-	font-size:40px;
+	font-size:60px;
 	margin: 50px 0 50px 30px;
-	letter-spacing:4px;
+	letter-spacing:10px;
 }
 .n-remeras__item-container {
 	display:flex;
@@ -337,9 +461,19 @@ body{
 	width:400px;
 	object-fit:cover;
 	grid-area:"img";
+	border-radius:25px 0;
+	border-bottom: 5px solid #738F40;
+	border-right:5px solid #738F40;
 }
 .n-remeras__item-box-1-info {
-	grid-area: "info";
+	grid-area:"info";
+}
+.n-remeras__item-box-1-info h3{
+	font-size:40px;
+	text-shadow:1px 1px 10px #fff;
+}
+.n-remeras__item-box-1-info b {
+	font-size:30px;
 }
 .n-remeras__item-box-2 {
 	width:800px;
@@ -356,9 +490,19 @@ body{
 	width:400px;
 	object-fit:cover;
 	grid-area: "img";
+	border-radius:25px 0;
+	border-bottom: 5px solid #FFD700;
+	border-right:5px solid  #FFD700;
 }
 .n-remeras__item-box-2-info {
 	grid-area:"info";
+}
+.n-remeras__item-box-2-info h3{
+	font-size:40px;
+	text-shadow:1px 1px 10px #fff;
+}
+.n-remeras__item-box-2-info b {
+	font-size:30px;
 }
 /* ESTILOS DE LA SECCION DE BUZOS*/
 .n-buzos{
@@ -366,9 +510,9 @@ body{
 }
 .n-buzos h2{
 	text-align:right;
-	font-size:40px;
+	font-size:60px;
 	margin-right:60px;
-	letter-spacing:4px;
+	letter-spacing:10px;
 }
 .n-buzos__item-container {
 	display:grid;
@@ -388,11 +532,24 @@ body{
 	width:100%;
 	height:100%;
 	object-fit:cover;
+	border-radius:25px 0;
+	border-bottom: 5px solid #738F40;
+	border-right:5px solid #738F40;
 }
 .n-buzos__item-box-1-info {
 	position: relative;
-	bottom:30px;
-	left:60px;
+	text-align:center;
+	top:-40px;
+}
+.n-buzos__item-box-1-info label {
+	font-size:30px;
+	text-shadow:1px 1px 10px #fff;
+}
+.n-buzos__item-box-1-info b {
+	position:absolute;
+	bottom:340px;
+	font-size:40px;
+	right:30px;
 }
 .n-buzos__item-box-2{
 	height:400px;
@@ -401,11 +558,24 @@ body{
 	width:100%;
 	height:100%;
 	object-fit:cover;
+	border-radius:25px 0;
+	border-bottom: 5px solid #738F40;
+	border-right:5px solid #738F40;
 }
 .n-buzos__item-box-2-info {
 	position: relative;
-	bottom:30px;
-	left:60px;
+	text-align:center;
+	top:-40px;
+}
+.n-buzos__item-box-2-info label {
+	font-size:30px;
+	text-shadow:1px 1px 10px #fff;
+}
+.n-buzos__item-box-2-info b {
+	position:absolute;
+	bottom:340px;
+	font-size:40px;
+	right:30px;
 }
 .n-buzos__item-box-3{
 	height:400px;
@@ -414,11 +584,24 @@ body{
 	width:100%;
 	height:100%;
 	object-fit:cover;
+	border-radius:25px 0;
+	border-bottom: 5px solid #738F40;
+	border-right:5px solid #738F40;
 }
 .n-buzos__item-box-3-info {
 	position: relative;
-	bottom:30px;
-	left:60px;
+	text-align:center;
+	top:-40px;
+}
+.n-buzos__item-box-3-info label {
+	font-size:30px;
+	text-shadow:1px 1px 10px #fff;
+}
+.n-buzos__item-box-3-info b {
+	position:absolute;
+	bottom:340px;
+	font-size:40px;
+	right:30px;
 }
 .n-buzos__item-box-4{
 	height:400px;
@@ -427,11 +610,24 @@ body{
 	width:100%;
 	height:100%;
 	object-fit:cover;
+	border-radius:25px 0;
+	border-bottom: 5px solid #738F40;
+	border-right:5px solid #738F40;
 }
 .n-buzos__item-box-4-info {
 	position: relative;
-	bottom:30px;
-	left:60px;
+	text-align:center;
+	top:-40px;
+}
+.n-buzos__item-box-4-info label {
+	font-size:30px;
+	text-shadow:1px 1px 10px #fff;
+}
+.n-buzos__item-box-4-info b {
+	position:absolute;
+	bottom:340px;
+	font-size:40px;
+	right:30px;
 }
 /* ESTILOS ESPECIFICOS DE LA PAGINA WOMEN*/
 /* ESTILOS DE LA SECCION JEANS */
@@ -440,9 +636,9 @@ body{
 }
 .jeans h2{
 	text-align:right;
-	font-size:40px;
+	font-size:60px;
 	margin-right:60px;
-	letter-spacing:4px;
+	letter-spacing:10px;
 }
 .jeans__item-container {
 	display:grid;
@@ -462,11 +658,24 @@ body{
 	width:100%;
 	height:100%;
 	object-fit:cover;
+	border-radius:25px 0;
+	border-bottom: 5px solid #FFD700;
+	border-right:5px solid #FFD700;
 }
 .jeans__item-box-1-info {
 	position: relative;
-	bottom:30px;
-	left:60px;
+	text-align:center;
+	top:-40px;
+}
+.jeans__item-box-1-info label {
+	font-size:30px;
+	text-shadow:1px 1px 10px #fff;
+}
+.jeans__item-box-1-info b {
+	position:absolute;
+	bottom:340px;
+	font-size:40px;
+	right:30px;
 }
 .jeans__item-box-2{
 	height:400px;
@@ -475,11 +684,24 @@ body{
 	width:100%;
 	height:100%;
 	object-fit:cover;
+	border-radius:25px 0;
+	border-bottom: 5px solid #FFD700;
+	border-right:5px solid #FFD700;
 }
 .jeans__item-box-2-info {
 	position: relative;
-	bottom:30px;
-	left:60px;
+	text-align:center;
+	top:-40px;
+}
+.jeans__item-box-2-info label {
+	font-size:30px;
+	text-shadow:1px 1px 10px #fff;
+}
+.jeans__item-box-2-info b {
+	position:absolute;
+	bottom:340px;
+	font-size:40px;
+	right:30px;
 }
 .jeans__item-box-3{
 	height:400px;
@@ -488,11 +710,24 @@ body{
 	width:100%;
 	height:100%;
 	object-fit:cover;
+	border-radius:25px 0;
+	border-bottom: 5px solid #FFD700;
+	border-right:5px solid #FFD700;
 }
 .jeans__item-box-3-info {
 	position: relative;
-	bottom:30px;
-	left:60px;
+	text-align:center;
+	top:-40px;
+}
+.jeans__item-box-3-info label {
+	font-size:30px;
+	text-shadow:1px 1px 10px #fff;
+}
+.jeans__item-box-3-info b {
+	position:absolute;
+	bottom:340px;
+	font-size:40px;
+	right:30px;
 }
 .jeans__item-box-4{
 	height:400px;
@@ -501,17 +736,30 @@ body{
 	width:100%;
 	height:100%;
 	object-fit:cover;
+	border-radius:25px 0;
+	border-bottom: 5px solid #FFD700;
+	border-right:5px solid #FFD700;
 }
 .jeans__item-box-4-info {
 	position: relative;
-	bottom:30px;
-	left:60px;
+	text-align:center;
+	top:-40px;
+}
+.jeans__item-box-4-info label {
+	font-size:30px;
+	text-shadow:1px 1px 10px #fff;
+}
+.jeans__item-box-4-info b {
+	position:absolute;
+	bottom:340px;
+	font-size:40px;
+	right:30px;
 }
 /* ESTILOS DE LA SECCION DE VESTIDOS */
 .vestidos h2{
-	font-size:40px;
+	font-size:60px;
 	margin: 50px 0 50px 30px;
-	letter-spacing:4px;
+	letter-spacing:10px;
 }
 .vestidos__item-container {
 	display:flex;
@@ -534,9 +782,19 @@ body{
 	width:400px;
 	object-fit:cover;
 	grid-area:"img";
+	border-radius:25px 0;
+	border-bottom: 5px solid #FFD700;
+	border-right:5px solid #FFD700;
 }
 .vestidos__item-box-1-info {
-	grid-area: "info";
+	grid-area:"info";
+}
+.vestidos__item-box-1-info h3{
+	font-size:40px;
+	text-shadow:1px 1px 10px #fff;
+}
+.vestidos__item-box-1-info b {
+	font-size:30px;
 }
 .vestidos__item-box-2 {
 	width:800px;
@@ -553,9 +811,19 @@ body{
 	width:400px;
 	object-fit:cover;
 	grid-area: "img";
+	border-radius:25px 0;
+	border-bottom: 5px solid #FFD700;
+	border-right:5px solid #FFD700;
 }
 .vestidos__item-box-2-info {
 	grid-area:"info";
+}
+.vestidos__item-box-2-info h3{
+	font-size:40px;
+	text-shadow:1px 1px 10px #fff;
+}
+.vestidos__item-box-2-info b {
+	font-size:30px;
 }
 /*TAMAÑO DE LETRA DE ENCABEZADOS DE LA PAGINA PROFILE*/
 .perfil-container{
@@ -570,9 +838,9 @@ body{
 	margin-bottom:20px;
 }
 .perfil__title-container h2 {
-	font-size:40px;
+	font-size:60px;
 	margin: 50px 0 20px 30px;
-	letter-spacing:4px;
+	letter-spacing:10px;
 }
 .perfil__title-container b {
 	margin: 64px 0 20px 2px;
@@ -648,9 +916,9 @@ body{
 }
 .ordenes__title {
 	text-align:right;
-	font-size:40px;
+	font-size:60px;
 	margin: 20px 30px;
-	letter-spacing:4px;
+	letter-spacing:10px;
 	border-bottom:3px solid #ccc;
 	padding-bottom:20px;
 }
