@@ -83,6 +83,8 @@ footer .redes-sociales img{
 }
 /* CONFIGURACION DEL CAROUSEL DE BOOTSRAP
 ESTILOS PISADOS */
+/*hace que las imagenes no ocupen toda la pantalla y tenga
+espacio incluso para meter la guia de talles al costados*/
 .carousel{
 	width:800px;
 	margin:5px; 
@@ -355,7 +357,6 @@ body{
 	font-size:40px;
 	right:30px;
 }
-
 .h-buzos__item-box-3{
 	height:400px;
 }
@@ -382,7 +383,6 @@ body{
 	font-size:40px;
 	right:30px;
 }
-
 .h-buzos__item-box-4{
 	height:400px;
 }
@@ -409,7 +409,6 @@ body{
 	font-size:40px;
 	right:30px;
 }
-
 /* ESTILOS DE LA SECCION REMERAS */
 .h-remeras h2{
 	font-size:60px;
@@ -422,7 +421,6 @@ body{
 	align-items:center;
 	margin:60px;
 }
-
 .h-remeras__item-box-1 {
 	width:600px;
 	display:grid;
@@ -452,7 +450,6 @@ body{
 .h-remeras__item-box-1-info b {
 	font-size: 30px;
 }
-
 .h-remeras__item-box-2 {
 	width:600px;
 	display:grid;

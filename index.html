@@ -4,22 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HALF</title>
+    <!-- link de bootstap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- link de css -->
     <link rel="stylesheet" type="text/css" href="styles/style.css">
-    <link rel="stylesheet" type="text/css" href="styles/normalize.css">
     <!-- Link para poner iconos -->
     <script src="https://kit.fontawesome.com/69e1b8c5b4.js" crossorigin="anonymous"></script>
     <!-- Tipo de letra -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nova+Square&family=Playpen+Sans:wght@300&display=swap" rel="stylesheet">
-
 </head>
 <body>
     <header>
         <nav class="nav"> <!--BARRA DE NAVEGACION-->
             <a href="index.html">
-                <h1>HALF</h1>
+                <h1>HALF</h1> 
             </a>
             <ul>
                 <li><a href="pages/men.html">Hombre</a></li>
@@ -32,7 +32,8 @@
     <main>        
         <article>
             <section class="carousel"> <!--SECCION DE ARTICULOS MAS VENDIDOS-->
-                <div id="carouselExampleCaptions" class="carousel slide">
+                <!-- carousel extraido de bootstrap -->
+                <div id="carouselExampleCaptions" class="carousel slide"> 
                     <h2>Lo mas vendido</h2>
                     <div class="carousel-indicators">
                       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -44,8 +45,8 @@
                         <a href="" >
                             <img src="imagenes/jeans/jeans1.jpg" class="d-block w-100 imagen" alt="imagen de unos jeans">
                         </a>
-                        <div class="carousel-caption d-none d-md-flex carousel-info-container">
-                          <h5 class="precio">$19,999</h5>
+                        <div class="carousel-caption d-none d-md-flex carousel-info-container"> <!-- clase agregada para modificar en mi css -->
+                          <h5 class="precio">$19,999</h5> <!-- clase agregada para el color de los precios -->
                           <p>Jeans rectos</p>
                         </div>
                       </div>
@@ -53,8 +54,8 @@
                         <a href="">
                             <img src="imagenes/buzos/buzo3.jpg" class="d-block w-100 imagen" alt="imagen de un buzo">
                         </a>
-                        <div class="carousel-caption d-none d-md-flex carousel-info-container">
-                          <h5 class="precio">$24,999</h5>
+                        <div class="carousel-caption d-none d-md-flex carousel-info-container"> <!-- clase agregada para modificar en mi css -->
+                          <h5 class="precio">$24,999</h5> <!-- clase agregada para el color de los precios -->
                           <p>Buzo oversize</p>
                         </div>
                       </div>
@@ -62,8 +63,8 @@
                         <a href="">
                             <img src="imagenes/remeras/remera3.jpg" class="d-block w-100 imagen" alt="imagen de una remera">
                         </a>
-                        <div class="carousel-caption d-none d-md-flex carousel-info-container">
-                          <h5 class="precio">$15,999</h5>
+                        <div class="carousel-caption d-none d-md-flex carousel-info-container"> <!-- clase agregada para modificar en mi css -->
+                          <h5 class="precio">$15,999</h5> <!-- clase agregada para el color de los precios -->
                           <p>Remera oversize</p>
                         </div>
                       </div>
@@ -77,10 +78,10 @@
                       <span class="visually-hidden">Next</span>
                     </button>
                 </div>
-                <div class="guia-talles">
+                <div class="guia-talles"> <!-- seccion de talles-->
                     <h3>Guia de talles</h3>
-                    <div class="guia-talles__item-grid-container">
-                        <div class="guia-talles__item-container">
+                    <div class="guia-talles__item-grid-container"> <!-- tabla de talles -->
+                        <div class="guia-talles__item-container"> 
                             <h4>S</h4>
                         </div>
                         <div class="guia-talles__item-container">
@@ -139,28 +140,28 @@
                             <a href=""><img src="imagenes/remeras/remera4.jpg" alt="imagen de una remera" class="ofertas__item"></a>
                             <div class="ofertas__item-box-1-info">
                                 <label>Remera oversize</label> <!-- NOMBRE DEL ARTICULO -->
-                                <b class="precio">$15,999</b>
+                                <b class="precio">$15,999</b> <!-- clase agregada para el color de los precios -->
                             </div>
                         </div>
                         <div class="ofertas__item-box-2"> <!-- SEGUNDO ARTICULO -->
                             <a href=""><img src="imagenes/buzos/buzo.jpg" alt="imagen de una buzo" class="ofertas__item"></a>
                             <div class="ofertas__item-box-2-info">
                                 <label>Buzo oversize</label> <!-- NOMBRE DEL ARTICULO -->
-                                <b class="precio">$22,999</b>
+                                <b class="precio">$22,999</b> <!-- clase agregada para el color de los precios -->
                             </div>
                         </div>
                         <div class="ofertas__item-box-3"> <!-- TERCER ARTICULO -->
                             <a href=""><img src="imagenes/camperas/campera.jpg" alt="imagen de una campera" class="ofertas__item"></a>
                             <div class="ofertas__item-box-3-info">
                                 <label>Campera de jean</label> <!-- NOMBRE DEL ARTICULO -->
-                                <b class="precio">$27,999</b>
+                                <b class="precio">$27,999</b> <!-- clase agregada para el color de los precios -->
                             </div>
                         </div>
                         <div class="ofertas__item-box-4"> <!-- CUARTO ARTICULO -->
                             <a href=""><img src="imagenes/vestidos/vestido.jpg" alt="imagen de un vestido" class="ofertas__item"></a>
                             <div class="ofertas__item-box-4-info">
                                 <label>Vestido</label> <!-- NOMBRE DEL ARTICULO -->
-                                <b class="precio">$25,999</b>
+                                <b class="precio">$25,999</b> <!-- clase agregada para el color de los precios -->
                             </div>
                         </div>
                     </div>
@@ -168,24 +169,24 @@
             </section>
         </article>
     </main>
+    <!-- link de javascript de boostrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-
     <footer> 
         <!-- REDES SOCIALES -->
        <div class="redes-sociales">
             <div>
                 <a href="https://www.instagram.com" target="_blank">
-                    <i class="fa-brands fa-instagram fa-2xl" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-instagram fa-2xl" style="color: #ffffff;"></i> <!-- icono de instagram -->
                 </a>
             </div>
             <div>
                 <a href="https://twitter.com/" target="_blank">
-                    <i class="fa-brands fa-x-twitter fa-2xl" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-x-twitter fa-2xl" style="color: #ffffff;"></i> <!-- icono de x -->
                 </a>
             </div>
             <div>
                 <a href="https://www.facebook.com/" target="_blank"> 
-                    <i class="fa-brands fa-facebook-f fa-2xl" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-facebook-f fa-2xl" style="color: #ffffff;"></i> <!-- icono de facebook -->
                 </a>
             </div>
        </div>
