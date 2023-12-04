@@ -992,3 +992,65 @@ body{
 h2 , h3 {
 	color:#70362D;
 }
+/* Estilos para screen mobile */
+@media screen and (min-width:501px) and (max-width:960px) {
+	/* ajuste de la pagina index */
+	/* ajuste de la seccion del carousel */
+	.guia-talles {
+		display:none;
+	}
+	.carousel {
+		width:90vw;
+	}
+	.carousel h2 {
+		margin:10px 30px;
+	}
+	.carousel-info-container h5 {
+		right:70px;
+		font-size:30px;
+	}
+	.carousel-info-container p {
+		right:200px;
+		font-size:20px;
+		top:30px;
+	}
+	/* ajuste de la seccion de ofertas de la pagina index */
+	.ofertas__item-box-3{
+		display:none;
+	}
+	.ofertas__item-box-4{
+		display:none;
+	}
+	.ofertas__item-container{
+		grid-template-columns:1fr 1fr;
+		margin:20px;
+	}
+	/* ajuste de la pagina profile */
+	/* ajuste de la seccion de profile*/
+	.perfil__title-container h2 {
+		font-size:50px;
+	}
+	.perfil__info-container div h3 {
+		font-size:3vw;
+		width:40vw;
+	}
+	.perfil__info-container div b {
+		font-size:2vw;
+		width:60vw;
+	}
+	.sign-up-container b {
+		font-size:2.2vw;
+	}
+	/* ajuste de la seccion de ordenes */
+	.ordenes__info-container {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		gap:6px;
+	}
+	.ordenes__info-container h3 {
+		font-size:3vw;
+	}
+	.ordenes__info-container b {
+		font-size:2vw;
+	}
+
+}
