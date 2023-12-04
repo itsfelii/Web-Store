@@ -19,6 +19,9 @@ header {
 	background-color:#180018;
 	width:100vw;
 }
+.navbar {
+	display:none; /* oculta el menu hamburguesa de boostrap*/
+}
 .nav{
 	color:#fff;
 	display:flex;
@@ -94,20 +97,15 @@ espacio incluso para meter la guia de talles al costados*/
 	padding:60px 100px;
 }
 .carousel-info-container {
-	position:relative;
-	bottom:665px;
+	justify-content:space-around;
 }
 .carousel-info-container h5 {
-	font-size:60px;
-	position:relative;
-	top:60px;
-	right:85px;
+	font-size:50px;
 }
 .carousel-info-container p {
-	font-size:40px;
-	text-shadow: 1px 1px 10px #fff;
-	position:relative;
-	right:335px;
+	font-size:35px;
+	color:#000;
+	text-shadow:1px 1px 10px #fff;
 }
 .imagen {
 	object-fit:cover;
@@ -116,7 +114,7 @@ espacio incluso para meter la guia de talles al costados*/
 }
 .carousel h2{
 	font-size:60px;
-	margin:60px 30px;
+	margin:20px 30px 0 30px;
 	letter-spacing:10px;
 }
 /* ESTILOS DE LA GUIA DE TALLES DEL CAROUSEL */
@@ -175,10 +173,6 @@ body{
 	column-gap:40px;
 	margin:50px;
 }
-.ofertas__item-container div div label{
-	color:#000;
-	font-weight:120px;
-}
 .ofertas__item-box-1{
 	height:400px;
 }
@@ -193,17 +187,12 @@ body{
 .ofertas__item-box-1-info {
 	position: relative;
 	text-align:center;
-	top:-40px;
-}
-.ofertas__item-box-1-info label {
-	font-size:30px;
-	text-shadow:1px 1px 10px #fff;
+	top:-4vw;
 }
 .ofertas__item-box-1-info b {
 	position:absolute;
-	bottom:340px;
-	font-size:40px;
-	right:30px;
+	font-size:3vw;
+	right:20px;
 }
 .ofertas__item-box-2{
 	height:400px;
@@ -219,17 +208,12 @@ body{
 .ofertas__item-box-2-info {
 	position: relative;
 	text-align:center;
-	top:-40px;
-}
-.ofertas__item-box-2-info label {
-	font-size:30px;
-	text-shadow:1px 1px 10px #fff;
+	top:-4vw;
 }
 .ofertas__item-box-2-info b {
 	position:absolute;
-	bottom:340px;
-	font-size:40px;
-	right:30px;
+	font-size:3vw;
+	right:20px;
 }
 .ofertas__item-box-3{
 	height:400px;
@@ -245,17 +229,12 @@ body{
 .ofertas__item-box-3-info {
 	position: relative;
 	text-align:center;
-	top:-40px;
-}
-.ofertas__item-box-3-info label {
-	font-size:30px;
-	text-shadow:1px 1px 10px #fff;
+	top:-4vw;
 }
 .ofertas__item-box-3-info b {
 	position:absolute;
-	bottom:340px;
-	font-size:40px;
-	right:30px;
+	font-size:3vw;
+	right:20px;
 }
 .ofertas__item-box-4{
 	height:400px;
@@ -271,17 +250,12 @@ body{
 .ofertas__item-box-4-info {
 	position: relative;
 	text-align:center;
-	top:-40px;
-}
-.ofertas__item-box-4-info label {
-	font-size:30px;
-	text-shadow:1px 1px 10px #ffffff;
+	top:-4vw;
 }
 .ofertas__item-box-4-info b {
 	position:absolute;
-	bottom:340px;
-	font-size:40px;
-	right:30px;
+	font-size:3vw;
+	right:20px;
 }
 /* ESTILOS ESPECIFICOS DE LA PAGINA MEN */
 /* ESTILOS DE LA SECCION DE BUZOS */
@@ -301,10 +275,6 @@ body{
 	column-gap:40px;
 	margin:50px;
 }
-.h-buzos__item-container div div label{
-	color:#000;
-	font-weight:120px;
-}
 .h-buzos__item-box-1{
 	height:400px;
 }
@@ -319,17 +289,12 @@ body{
 .h-buzos__item-box-1-info {
 	position: relative;
 	text-align:center;
-	top:-40px;
-}
-.h-buzos__item-box-1-info label {
-	font-size:30px;
-	text-shadow:1px 1px 10px #fff;
+	top:-4vw;
 }
 .h-buzos__item-box-1-info b {
 	position:absolute;
-	bottom:340px;
-	font-size:40px;
-	right:30px;
+	font-size:3vw;
+	right:20px;
 }
 .h-buzos__item-box-2{
 	height:400px;
@@ -345,17 +310,12 @@ body{
 .h-buzos__item-box-2-info {
 	position: relative;
 	text-align:center;
-	top:-40px;
-}
-.h-buzos__item-box-2-info label {
-	font-size:30px;
-	text-shadow:1px 1px 10px #fff;
+	top:-4vw;
 }
 .h-buzos__item-box-2-info b {
 	position:absolute;
-	bottom:340px;
-	font-size:40px;
-	right:30px;
+	font-size:3vw;
+	right:20px;
 }
 .h-buzos__item-box-3{
 	height:400px;
@@ -371,17 +331,12 @@ body{
 .h-buzos__item-box-3-info {
 	position: relative;
 	text-align:center;
-	top:-40px;
-}
-.h-buzos__item-box-3-info label {
-	font-size:30px;
-	text-shadow:1px 1px 10px #fff;
+	top:-4vw;
 }
 .h-buzos__item-box-3-info b {
 	position:absolute;
-	bottom:340px;
-	font-size:40px;
-	right:30px;
+	font-size:3vw;
+	right:20px;
 }
 .h-buzos__item-box-4{
 	height:400px;
@@ -397,17 +352,12 @@ body{
 .h-buzos__item-box-4-info {
 	position: relative;
 	text-align:center;
-	top:-40px;
-}
-.h-buzos__item-box-4-info label {
-	font-size:30px;
-	text-shadow:1px 1px 10px #fff;
+	top:-4vw;
 }
 .h-buzos__item-box-4-info b {
 	position:absolute;
-	bottom:340px;
-	font-size:40px;
-	right:30px;
+	font-size:3vw;
+	right:20px;
 }
 /* ESTILOS DE LA SECCION REMERAS */
 .h-remeras h2{
@@ -567,10 +517,6 @@ body{
 	column-gap:40px;
 	margin:50px;
 }
-.n-buzos__item-container div div label{
-	color:#000;
-	font-weight:120px;
-}
 .n-buzos__item-box-1{
 	height:400px;
 }
@@ -585,17 +531,12 @@ body{
 .n-buzos__item-box-1-info {
 	position: relative;
 	text-align:center;
-	top:-40px;
-}
-.n-buzos__item-box-1-info label {
-	font-size:30px;
-	text-shadow:1px 1px 10px #fff;
+	top:-4vw;
 }
 .n-buzos__item-box-1-info b {
 	position:absolute;
-	bottom:340px;
-	font-size:40px;
-	right:30px;
+	font-size:3vw;
+	right:20px;
 }
 .n-buzos__item-box-2{
 	height:400px;
@@ -611,17 +552,12 @@ body{
 .n-buzos__item-box-2-info {
 	position: relative;
 	text-align:center;
-	top:-40px;
-}
-.n-buzos__item-box-2-info label {
-	font-size:30px;
-	text-shadow:1px 1px 10px #fff;
+	top:-4vw;
 }
 .n-buzos__item-box-2-info b {
 	position:absolute;
-	bottom:340px;
-	font-size:40px;
-	right:30px;
+	font-size:3vw;
+	right:20px;
 }
 .n-buzos__item-box-3{
 	height:400px;
@@ -637,17 +573,12 @@ body{
 .n-buzos__item-box-3-info {
 	position: relative;
 	text-align:center;
-	top:-40px;
-}
-.n-buzos__item-box-3-info label {
-	font-size:30px;
-	text-shadow:1px 1px 10px #fff;
+	top:-4vw;
 }
 .n-buzos__item-box-3-info b {
 	position:absolute;
-	bottom:340px;
-	font-size:40px;
-	right:30px;
+	font-size:3vw;
+	right:20px;
 }
 .n-buzos__item-box-4{
 	height:400px;
@@ -663,17 +594,12 @@ body{
 .n-buzos__item-box-4-info {
 	position: relative;
 	text-align:center;
-	top:-40px;
-}
-.n-buzos__item-box-4-info label {
-	font-size:30px;
-	text-shadow:1px 1px 10px #fff;
+	top:-4vw;
 }
 .n-buzos__item-box-4-info b {
 	position:absolute;
-	bottom:340px;
-	font-size:40px;
-	right:30px;
+	font-size:3vw;
+	right:20px;
 }
 /* ESTILOS ESPECIFICOS DE LA PAGINA WOMEN*/
 /* ESTILOS DE LA SECCION JEANS */
@@ -693,10 +619,6 @@ body{
 	column-gap:40px;
 	margin:50px;
 }
-.jeans__item-container div div label{
-	color:#000;
-	font-weight:120px;
-}
 .jeans__item-box-1{
 	height:400px;
 }
@@ -711,17 +633,12 @@ body{
 .jeans__item-box-1-info {
 	position: relative;
 	text-align:center;
-	top:-40px;
-}
-.jeans__item-box-1-info label {
-	font-size:30px;
-	text-shadow:1px 1px 10px #fff;
+	top:-4vw;
 }
 .jeans__item-box-1-info b {
 	position:absolute;
-	bottom:340px;
-	font-size:40px;
-	right:30px;
+	font-size:3vw;
+	right:20px;
 }
 .jeans__item-box-2{
 	height:400px;
@@ -737,17 +654,12 @@ body{
 .jeans__item-box-2-info {
 	position: relative;
 	text-align:center;
-	top:-40px;
-}
-.jeans__item-box-2-info label {
-	font-size:30px;
-	text-shadow:1px 1px 10px #fff;
+	top:-4vw;
 }
 .jeans__item-box-2-info b {
 	position:absolute;
-	bottom:340px;
-	font-size:40px;
-	right:30px;
+	font-size:3vw;
+	right:20px;
 }
 .jeans__item-box-3{
 	height:400px;
@@ -763,17 +675,12 @@ body{
 .jeans__item-box-3-info {
 	position: relative;
 	text-align:center;
-	top:-40px;
-}
-.jeans__item-box-3-info label {
-	font-size:30px;
-	text-shadow:1px 1px 10px #fff;
+	top:-4vw;
 }
 .jeans__item-box-3-info b {
 	position:absolute;
-	bottom:340px;
-	font-size:40px;
-	right:30px;
+	font-size:3vw;
+	right:20px;
 }
 .jeans__item-box-4{
 	height:400px;
@@ -789,17 +696,12 @@ body{
 .jeans__item-box-4-info {
 	position: relative;
 	text-align:center;
-	top:-40px;
-}
-.jeans__item-box-4-info label {
-	font-size:30px;
-	text-shadow:1px 1px 10px #fff;
+	top:-4vw;
 }
 .jeans__item-box-4-info b {
 	position:absolute;
-	bottom:340px;
-	font-size:40px;
-	right:30px;
+	font-size:3vw;
+	right:20px;
 }
 /* ESTILOS DE LA SECCION DE VESTIDOS */
 .vestidos h2{
@@ -993,7 +895,25 @@ h2 , h3 {
 	color:#70362D;
 }
 /* Estilos para screen mobile */
-@media screen and (min-width:501px) and (max-width:960px) {
+@media only screen and (min-width:320px) and (max-width:960px) {
+	/* ajustes de el footer de las paginas */
+	.copyright p {
+		font-size:2vw;
+	}
+	.copyright div a h3 {
+		font-size:1.5vw;
+	}
+	/* ajuste del nav en las paginas */
+	.nav {
+		display:none;
+	}
+	.navbar {
+		display:block;
+		background-color:#180018;
+	}
+	.nav-brand {
+		color:#fff;
+	}
 	/* ajuste de la pagina index */
 	/* ajuste de la seccion del carousel */
 	.guia-talles {
@@ -1001,18 +921,21 @@ h2 , h3 {
 	}
 	.carousel {
 		width:90vw;
+		margin-top:15vw;
 	}
 	.carousel h2 {
 		margin:10px 30px;
 	}
 	.carousel-info-container h5 {
 		right:70px;
-		font-size:30px;
+		font-size:4.7vw;
+		display:block;
 	}
 	.carousel-info-container p {
 		right:200px;
-		font-size:20px;
+		font-size:3.8vw;
 		top:30px;
+		display:block;
 	}
 	/* ajuste de la seccion de ofertas de la pagina index */
 	.ofertas__item-box-3{
@@ -1024,6 +947,14 @@ h2 , h3 {
 	.ofertas__item-container{
 		grid-template-columns:1fr 1fr;
 		margin:20px;
+	}
+	.ofertas__item-box-1-info b {
+		font-size:4.5vw;
+		top:-3vw;
+	}
+	.ofertas__item-box-2-info b {
+		font-size:4.5vw;
+		top:-3vw;
 	}
 	/* ajuste de la pagina profile */
 	/* ajuste de la seccion de profile*/
@@ -1052,5 +983,4 @@ h2 , h3 {
 	.ordenes__info-container b {
 		font-size:2vw;
 	}
-
 }

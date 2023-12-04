@@ -28,6 +28,36 @@
                 <li><a href="pages/profile.html">Perfil</a></li>
             </ul> 
         </nav>
+        <nav class="navbar fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html" style="color:#fff;">HALF</a>
+              <button class="navbar-toggler bg-body-tertiary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">HALF</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link" href="pages/men.html">Hombre</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="pages/women.html">Mujer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/childs.html">Niños</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/profile.html">Perfil</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+        </nav>
     </header>
     <main>        
         <article>
@@ -45,7 +75,7 @@
                         <a href="" >
                             <img src="imagenes/jeans/jeans1.jpg" class="d-block w-100 imagen" alt="imagen de unos jeans">
                         </a>
-                        <div class="carousel-caption d-none d-md-flex carousel-info-container"> <!-- clase agregada para modificar en mi css -->
+                        <div class="carousel-caption d-none d-sm-flex d-md-flex carousel-info-container"> <!-- clase agregada para modificar en mi css -->
                           <h5 class="precio">$19,999</h5> <!-- clase agregada para el color de los precios -->
                           <p>Jeans rectos</p>
                         </div>
@@ -54,7 +84,7 @@
                         <a href="">
                             <img src="imagenes/buzos/buzo3.jpg" class="d-block w-100 imagen" alt="imagen de un buzo">
                         </a>
-                        <div class="carousel-caption d-none d-md-flex carousel-info-container"> <!-- clase agregada para modificar en mi css -->
+                        <div class="carousel-caption d-none d-sm-flex d-md-flex carousel-info-container"> <!-- clase agregada para modificar en mi css -->
                           <h5 class="precio">$24,999</h5> <!-- clase agregada para el color de los precios -->
                           <p>Buzo oversize</p>
                         </div>
@@ -63,7 +93,7 @@
                         <a href="">
                             <img src="imagenes/remeras/remera3.jpg" class="d-block w-100 imagen" alt="imagen de una remera">
                         </a>
-                        <div class="carousel-caption d-none d-md-flex carousel-info-container"> <!-- clase agregada para modificar en mi css -->
+                        <div class="carousel-caption d-none d-sm-flex d-md-flex carousel-info-container"> <!-- clase agregada para modificar en mi css -->
                           <h5 class="precio">$15,999</h5> <!-- clase agregada para el color de los precios -->
                           <p>Remera oversize</p>
                         </div>
@@ -139,28 +169,24 @@
                         <div class="ofertas__item-box-1">
                             <a href=""><img src="imagenes/remeras/remera4.jpg" alt="imagen de una remera" class="ofertas__item"></a>
                             <div class="ofertas__item-box-1-info">
-                                <label>Remera oversize</label> <!-- NOMBRE DEL ARTICULO -->
                                 <b class="precio">$15,999</b> <!-- clase agregada para el color de los precios -->
                             </div>
                         </div>
                         <div class="ofertas__item-box-2"> <!-- SEGUNDO ARTICULO -->
                             <a href=""><img src="imagenes/buzos/buzo.jpg" alt="imagen de una buzo" class="ofertas__item"></a>
                             <div class="ofertas__item-box-2-info">
-                                <label>Buzo oversize</label> <!-- NOMBRE DEL ARTICULO -->
                                 <b class="precio">$22,999</b> <!-- clase agregada para el color de los precios -->
                             </div>
                         </div>
                         <div class="ofertas__item-box-3"> <!-- TERCER ARTICULO -->
                             <a href=""><img src="imagenes/camperas/campera.jpg" alt="imagen de una campera" class="ofertas__item"></a>
                             <div class="ofertas__item-box-3-info">
-                                <label>Campera de jean</label> <!-- NOMBRE DEL ARTICULO -->
                                 <b class="precio">$27,999</b> <!-- clase agregada para el color de los precios -->
                             </div>
                         </div>
                         <div class="ofertas__item-box-4"> <!-- CUARTO ARTICULO -->
                             <a href=""><img src="imagenes/vestidos/vestido.jpg" alt="imagen de un vestido" class="ofertas__item"></a>
                             <div class="ofertas__item-box-4-info">
-                                <label>Vestido</label> <!-- NOMBRE DEL ARTICULO -->
                                 <b class="precio">$25,999</b> <!-- clase agregada para el color de los precios -->
                             </div>
                         </div>
