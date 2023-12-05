@@ -78,7 +78,7 @@ footer .redes-sociales img{
 	gap:40px;
 }
 .copyright div a h3{
-	color:rgba(230, 230, 230, 0.308);
+	color:rgba(230, 230, 230, 0.651);
 	font-size:17px;
 }
 .copyright div a {
@@ -146,9 +146,11 @@ espacio incluso para meter la guia de talles al costados*/
 	margin:10px 0;
 }
 /*CONFIGURACION DE EL FONDO DE LA PAGINA*/
-body{
+.background{
 	background-color:#BCA79D;
 	color:#fff;
+	background-image: url(../imagenes/background/atumn-leaves.png);
+	background-repeat: repeat;
 }
 /*CONFIGURACION DE LA ETIQUTA DE PRECIO DE TODAS LAS PAGINAS*/
 .precio {
@@ -813,7 +815,7 @@ body{
 	border-radius: 15px 0 15px 0;
 	width:22%;
 }
-.perfil__info-username-container b {
+.perfil__info-username {
 	border-bottom:3px dashed rgba(172, 172, 172, 0.897);
 	padding-bottom:2px;
 	width:78%;
@@ -832,7 +834,7 @@ body{
 	border-radius:15px 0 15px 0;
 	width:22%;
 }
-.perfil__info-email-container b {
+.perfil__info-email {
 	border-bottom: 3px dashed rgba(172, 172, 172, 0.897);
 	padding-bottom:2px;
 	width:78%;
@@ -851,7 +853,7 @@ body{
 	border-radius:15px 0 15px 0;
 	width:22%;
 }
-.perfil__info-password-container b {
+.perfil__info-password {
 	border-bottom: 3px dashed rgba(172, 172, 172, 0.897);
 	padding-bottom:2px;
 	width:78%;
@@ -886,6 +888,7 @@ body{
 /* ESTILOS DE EL FONDO DE LA PAGINA */
 .profile-background {
 	background-color:#100012;
+	color:#fff;
 }
 .nav-profile {
 	background-color:#0e0e10;
@@ -920,8 +923,8 @@ h2 , h3 {
 		display:none;
 	}
 	.carousel {
-		width:90vw;
-		margin-top:15vw;
+		width:100vw;
+		margin: 15vw  0 0 0;
 	}
 	.carousel h2 {
 		margin:10px 30px;
@@ -969,8 +972,9 @@ h2 , h3 {
 		font-size:2vw;
 		width:60vw;
 	}
-	.sign-up-container b {
+	.sign-up-container b , .sign-up-container a {
 		font-size:2.2vw;
+		text-decoration:none;
 	}
 	/* ajuste de la seccion de ordenes */
 	.ordenes__info-container {
