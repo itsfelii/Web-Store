@@ -919,8 +919,11 @@ h2 , h3 {
 	}
 	/* ajuste de la pagina index */
 	/* ajuste de la seccion del carousel */
-	.guia-talles {
+	.guia-talles { /* esconde la guia de talles de al lado de la foto */
 		display:none;
+	}
+	.carousel-item {
+		padding:5vw 10vw;
 	}
 	.carousel {
 		width:100vw;
@@ -928,9 +931,6 @@ h2 , h3 {
 	}
 	.carousel h2 {
 		margin:10px 30px;
-	}
-	.carousel-item {
-		padding:5vw 10vw;
 	}
 	.carousel-info-container h5 {
 		right:70px;
