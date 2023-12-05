@@ -149,8 +149,6 @@ espacio incluso para meter la guia de talles al costados*/
 .background{
 	background-color:#BCA79D;
 	color:#fff;
-	background-image:url(../imagenes/background/atumn-leaves.png);
-	background-repeat:repeat;
 }
 /*CONFIGURACION DE LA ETIQUTA DE PRECIO DE TODAS LAS PAGINAS*/
 .precio {
