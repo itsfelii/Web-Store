@@ -60,11 +60,6 @@ footer .redes-sociales {
 	gap:40px;
 	justify-content:center;
 }
-footer .redes-sociales img{
-	width:100%;
-	height:100%;
-	object-fit:scale-down;
-}
 .copyright {
 	display:flex;
 	flex-direction:column;
