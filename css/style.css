@@ -880,7 +880,7 @@ espacio incluso para meter la guia de talles al costados*/
 	align-self:center;
 	padding-left:30px;
 }
-/* ESTILOS DE EL FONDO DE LA PAGINA */
+/* ESTILOS DE EL FONDO DE LA PAGINA DE PROFILE */
 .profile-background {
 	background-color:#100012;
 	color:#fff;
@@ -958,7 +958,7 @@ h2 , h3 {
 		top:-3vw;
 	}
 	/* ajuste de la pagina profile */
-	/* ajuste de la seccion de profile*/
+	/* ajuste de la seccion de perfil de profile*/
 	.perfil__title-container h2 {
 		font-size:50px;
 	}
