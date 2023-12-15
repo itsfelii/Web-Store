@@ -1,0 +1,107 @@
+/* ESTILOS PARA DISTINTAS PANTALLAS */
+/* ESTILOS PARA MOBILE */
+@media only screen and (min-width:320px) and (max-width:960) {
+    /* ajustes de el footer de las paginas */
+    .copyright {
+        p {
+            font-size:2vw;
+        }
+        div {
+            a {
+                h3 {
+                    font-size:1.5vw;
+                }
+            }
+        }
+    }
+    /* ajuste del nav en las paginas */
+    header {
+        .nav {
+            display:none;
+        }
+        .navbar {
+            display:block;
+            background-color:#180018;
+            div {
+                .navbar-brand {
+                    color:#fff;
+                }
+            }
+        }
+    }
+    /* ajuste de la pagina index */
+    /* ajuste de la seccion del carousel */
+    .carousel {
+        width:100vw;
+        margin:15vw 0;
+        h2 {
+            margin:10px 30px;
+        }
+        div {
+            .carousel-inner {
+                .carousel-item {
+                    padding:5vw 10vw;
+                    .carousel-info-container {
+                        h5 {
+                            right:70px;
+                            font-size:4.7vw;
+                            display:block;
+                        }
+                        p {
+                            right: 200px;
+                            font-size:3.8vw;
+                            top:30px;
+                            display:block;
+                        }
+                    }
+                }
+            }
+        }
+        .guia-talles {
+            display:none;
+        }
+    }
+    /* ajuste de la seccion de ofertas de la pagina index */
+    .ofertas {
+        .ofertas__item-container {
+            grid-template-columns:1fr 1fr;
+            margin:20px;
+            .ofertas__item-box-1 {
+                .ofertas__item-box-1-info {
+                    b {
+                        font-size:4.5vw;
+                        top:-3vw;
+                    }
+                }
+            }
+            .ofertas__item-box-2 {
+                .ofertas__item-box-2-info {
+                    b {
+                        font-size:4.5vw;
+                        top:-3vw;
+                    }
+                }
+            }
+            .ofertas__item-box-3 {
+                display:none
+            }
+            .ofertas__item-box-4 {
+                display:none;
+            }
+        }
+    }
+    /* ajuste de la pagina profile */
+    /* ajuste de la seccion de perfil de profile */
+    .ordenes-container {
+        .ordenes__info-container {
+            grid-template-columns:1fr 1fr 1fr 1fr;
+            gap:6px;
+            h3 {
+                font-size:3vw;
+            }
+            b {
+                font-size:2vw;
+            }
+        }
+    }
+}

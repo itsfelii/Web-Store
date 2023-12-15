@@ -1,0 +1,90 @@
+/* ESTILOS ESPECIFICOS DE LA PAGINA PROFILE */
+/* ESTILOS DE LA SECCION PERFIL */
+.perfil-container {
+    margin:30px;
+    display:flex;
+    flex-direction:column;
+    .perfil__title-container {
+        display:flex;
+        gap:15px;
+        border-bottom: 3px solid #ccc;
+        margin-bottom:20px;
+        h2 {
+            font-size:60px;
+            margin:50px 0 20px 30px ; 
+            letter-spacing:10px;
+        }
+        b {
+            margin: 64px 0 20px 2px;
+            color: rgba(172, 172 , 172 , 0.897);
+        }
+    }
+    .perfil__info-container {
+        border: 3px solid #ccc;
+        padding:10px 20px;
+        border-radius: 15px 0 15px 0;
+        .perfil__info-username-container {
+            display:flex;
+            justify-content:space-between;
+            align-items:end;
+            margin-top:10px;
+            h3 {
+                border:3px solid #ccc;
+                padding:10px;
+                margin: 0 15px 0 0;
+                border-radius: 15px 0;
+                width:22%;
+            }
+            .perfil__info-username {
+                border-bottom:3px dashed rgba(172 ,172 , 172 , 0.897);
+                padding-bottom:2px;
+                width:78%;
+                text-align:center;
+            }
+        }
+        .perfil__info-email-container {
+            display:flex;
+            justify-content: space-between;
+            align-items:end;
+            margin-top:40px;
+            h3 {
+                border: 3px solid #ccc;
+                padding:10px;
+                margin:0 15px 0 0;
+                border-radius:15px 0;
+                width:22%;
+            }
+            .perfil__info-email {
+                border-bottom:3px dashed rgba(172, 172 , 172 , 0.897);
+                padding-bottom:2px; 
+                width:78%;
+                text-align:center;
+            }
+        }
+        .perfil__info-password-container {
+            display:flex;
+            justify-content:space-between;
+            align-items:end;
+            margin:40px 0 10px 0;
+            h3 {
+                border: 3px solid #ccc;
+                padding:10px;
+                margin: 0 15px 0 0;
+                border-radius:15px 0;
+                width:22%;
+            }
+            .perfil__info-password {
+                border-bottom:3px dashed rgba(172, 172 , 172 , 0.897);
+                padding-bottom:2px;
+                width:78%;
+                text-align:center;
+            }
+        }
+    }
+    .sign-up-container {
+        display:flex;
+        justify-content:center;
+        gap:20px;
+        margin:17px 0;
+    }
+}

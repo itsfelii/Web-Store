@@ -1,0 +1,74 @@
+/* ESTILOS DE LA SECCION DE VESTIDOS */
+.vestidos {
+    h2 {
+        font-size:60px;
+        margin:50px 0 50px 30px;
+        letter-spacing:10px;
+    }
+    .vestidos__item-container {
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        margin:60px;
+        .vestidos__item-box-1 {
+            width:600px;
+            display:grid;
+            grid-template-areas:
+            "img img info";
+            grid-template-rows:600px;
+            padding:30px;
+            column-gap:40px;
+            a {
+                img {
+                    height:100%;
+                    width:400px;
+                    object-fit:cover;
+                    grid-area:"img";
+                    border-radius:25px 0;
+                    border-bottom:5px solid #70362d;
+                    border-right:5px solid #70362d; 
+                }
+            }
+            .vestidos__item-box-1-info {
+                grid-area:"info";
+                h4 {
+                    font-size:40px;
+                    text-shadow:1px 1px 10px #fff;
+                }
+                b {
+                    font-size:30px;
+                }
+            }
+        }
+        .vestidos__item-box-2 {
+            width:600px;
+            display:grid;
+            grid-template-areas:
+            "img img info";
+            grid-template-rows:600px;
+            padding:30px;
+            column-gap:40px;
+            a {
+                img {
+                    height:100%;
+                    width:400px;
+                    object-fit:cover;
+                    grid-area:"img";
+                    border-radius:25px 0;
+                    border-bottom:5px solid #70362d;
+                    border-right:5px solid #70362d; 
+                }
+            }
+            .vestidos__item-box-2-info {
+                grid-area:"info";
+                h4 {
+                    font-size:40px;
+                    text-shadow:1px 1px 10px #fff;
+                }
+                b {
+                    font-size:30px;
+                }
+            }
+        }
+    }
+}
