@@ -1,6 +1,6 @@
 /* ESTILOS PARA DISTINTAS PANTALLAS */
 /* ESTILOS PARA MOBILE */
-@media only screen and (min-width:320px) and (max-width:960) {
+@media only screen and (min-width:320px) and (max-width:960px) {
     /* ajustes de el footer de las paginas */
     .copyright {
         p {
@@ -22,6 +22,7 @@
         .navbar {
             display:block;
             background-color:#180018;
+            margin-bottom:80px;
             div {
                 .navbar-brand {
                     color:#fff;
@@ -29,11 +30,16 @@
             }
         }
     }
+    body {
+        padding:15vw 0 0 0;
+    }
+    h2 { 
+        font-size:10vw; // no esta funcionando 
+    }
     /* ajuste de la pagina index */
     /* ajuste de la seccion del carousel */
     .carousel {
         width:100vw;
-        margin:15vw 0;
         h2 {
             margin:10px 30px;
         }
@@ -101,6 +107,252 @@
             }
             b {
                 font-size:2vw;
+            }
+        }
+    }
+    /* ajuste de la pagina men */
+    /* ajuste de la seccion de buzos */
+    .h-buzos {
+        .h-buzos__item-container {
+            grid-template-columns:1fr 1fr;
+            margin:20px;
+            .h-buzos__item-box-1 {
+                .h-buzos__item-box-1-info {
+                    b {
+                        font-size:4.5vw;
+                        top:-3vw;
+                    }
+                }
+            }
+            .h-buzos__item-box-2 {
+                .h-buzos__item-box-2-info {
+                    b {
+                        font-size:4.5vw;
+                        top:-3vw;
+                    }
+                }
+            }
+            .h-buzos__item-box-3 {
+                display:none
+            }
+            .h-buzos__item-box-4 {
+                display:none;
+            }
+        }
+    }
+    /* ajuste de la seccion de remeras*/
+    .h-remeras {
+        .h-remeras__item-container { 
+            gap: 5vw;
+            margin:40px 5vw 40px 5vw;
+            width:85vw;
+            .h-remeras__item-box-1 {
+                display:block;
+                height:80vw;
+                width:50%;
+                padding:5px;
+                a {
+                    img {
+                        width:100%;
+                    }
+                }
+                .h-remeras__item-box-1-info {
+                    h4 {
+                        display:none
+                    }
+                    b {
+                        position:relative;
+                        bottom:42px;
+                        left:30%;
+                        font-size:5vw;
+                    }
+                }
+            }
+            .h-remeras__item-box-2 {
+                display:block;
+                height: 80vw;
+                padding:5px;
+                width:50%;
+                a {
+                    img {
+                        width:100%;
+                    }
+                }
+                .h-remeras__item-box-2-info {
+                    h4 {
+                        display:none;
+                    }
+                    b {
+                        position:relative;
+                        bottom:42px;
+                        left:30%;
+                        font-size:5vw;
+                    }
+                }
+            }
+        }
+    }
+    /* ajuste de la pagina de women */
+    /* ajuste de la seccion de jeans*/
+    .jeans {
+        .jeans__item-container {
+            grid-template-columns:1fr 1fr;
+            margin:20px;
+            .jeans__item-box-1 {
+                .jeans__item-box-1-info {
+                    b {
+                        font-size:4.5vw;
+                        top:-3vw;
+                    }
+                }
+            }
+            .jeans__item-box-2 {
+                .jeans__item-box-2-info {
+                    b {
+                        font-size:4.5vw;
+                        top:-3vw;
+                    }
+                }
+            }
+            .jeans__item-box-3 {
+                display:none
+            }
+            .jeans__item-box-4 {
+                display:none;
+            }
+        }
+    }
+    /* ajuste de la seccion de vestidos */
+    .vestidos {
+        .vestidos__item-container { 
+            gap: 5vw;
+            margin:40px 5vw 40px 5vw;
+            width:85vw;
+            .vestidos__item-box-1 {
+                display:block;
+                height:80vw;
+                width:50%;
+                padding:5px;
+                a {
+                    img {
+                        width:100%;
+                    }
+                }
+                .vestidos__item-box-1-info {
+                    h4 {
+                        display:none
+                    }
+                    b {
+                        position:relative;
+                        bottom:42px;
+                        left:30%;
+                        font-size:5vw;
+                    }
+                }
+            }
+            .vestidos__item-box-2 {
+                display:block;
+                height: 80vw;
+                padding:5px;
+                width:50%;
+                a {
+                    img {
+                        width:100%;
+                    }
+                }
+                .vestidos__item-box-2-info {
+                    h4 {
+                        display:none;
+                    }
+                    b {
+                        position:relative;
+                        bottom:42px;
+                        left:30%;
+                        font-size:5vw;
+                    }
+                }
+            }
+        }
+    }
+    /* Ajuste de la pagina de childs */
+    /* Ajuste de la seccion de buzos */
+    .n-remeras {
+        .n-remeras__item-container { 
+            gap: 5vw;
+            margin:40px 5vw 40px 5vw;
+            width:85vw;
+            .n-remeras__item-box-1 {
+                display:block;
+                height:80vw;
+                width:50%;
+                padding:5px;
+                a {
+                    img {
+                        width:100%;
+                    }
+                }
+                .n-remeras__item-box-1-info {
+                    h4 {
+                        display:none
+                    }
+                    b {
+                        position:relative;
+                        bottom:42px;
+                        left:30%;
+                        font-size:5vw;
+                    }
+                }
+            }
+            .n-remeras__item-box-2 {
+                display:block;
+                height: 80vw;
+                padding:5px;
+                width:50%;
+                a {
+                    img {
+                        width:100%;
+                    }
+                }
+                .n-remeras__item-box-2-info {
+                    h4 {
+                        display:none;
+                    }
+                    b {
+                        position:relative;
+                        bottom:42px;
+                        left:30%;
+                        font-size:5vw;
+                    }
+                }
+            }
+        }
+    }
+    /* Ajuste de la seccion de buzos */
+    .n-buzos {
+        .n-buzos__item-container {
+            grid-template-columns:1fr 1fr;
+            margin:20px;
+            .n-buzos__item-box-1 {
+                .n-buzos__item-box-1-info {
+                    b {
+                        font-size:4.5vw;
+                        top:-3vw;
+                    }
+                }
+            }
+            .n-buzos__item-box-2 {
+                .n-buzos__item-box-2-info {
+                    b {
+                        font-size:4.5vw;
+                        top:-3vw;
+                    }
+                }
+            }
+            .n-buzos__item-box-3 {
+                display:none
+            }
+            .n-buzos__item-box-4 {
+                display:none;
             }
         }
     }
