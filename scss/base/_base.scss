@@ -1,4 +1,9 @@
 /* ESTILOS GENERALES */
+/* Arreglo con los problemas de overflow de la pagina */
+body {
+    width:100%;
+    overflow-x:hidden;
+}
 /* ESTILOS DE TIPOGRAFIA DE LA PAGINA */
 *{
     font-family:'Nova Square' , sans-serif;

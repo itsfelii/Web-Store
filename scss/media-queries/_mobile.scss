@@ -1,6 +1,6 @@
 /* ESTILOS PARA DISTINTAS PANTALLAS */
 /* ESTILOS PARA MOBILE */
-@media only screen and (min-width:320px) and (max-width:960px) {
+@media only screen and (min-width:320px) and (max-width:575px) {
     /* ajustes de el footer de las paginas */
     .copyright {
         p {
@@ -71,8 +71,11 @@
     .ofertas {
         .ofertas__item-container {
             grid-template-columns:1fr 1fr;
-            margin:20px;
+            margin:20px 10px;
+            height:70vw;
+            column-gap:33px;
             .ofertas__item-box-1 {
+                height:70vw;
                 .ofertas__item-box-1-info {
                     b {
                         font-size:4.5vw;
@@ -81,6 +84,7 @@
                 }
             }
             .ofertas__item-box-2 {
+                height:70vw;
                 .ofertas__item-box-2-info {
                     b {
                         font-size:4.5vw;
@@ -97,7 +101,52 @@
         }
     }
     /* ajuste de la pagina profile */
-    /* ajuste de la seccion de perfil de profile */
+    /* ajuste de la seccion de perfil de profile*/
+    .perfil-container {
+        margin:30px 15px;
+        .perfil__info-container {
+            padding:12px;
+            .perfil__info-username-container {
+                h3 {
+                    width:45%;
+                    font-size:5vw;
+                }
+                .perfil__info-username {
+                    width:55%;
+                    font-size:2.7vw;
+                }
+            }
+            .perfil__info-email-container {
+                h3 {
+                    width:45%;
+                    font-size:5vw;
+                }
+                .perfil__info-email {
+                    width:55%;
+                    font-size:2.7vw;
+                }
+            }
+            .perfil__info-password-container {
+                h3 {
+                    width:45%;
+                    font-size:4.5vw;
+                }
+                .perfil__info-password {
+                    width:55%;
+                    font-size:2.7vw;
+                }
+            }
+        }
+        .sign-up-container {
+            b {
+                font-size:3.2vw;
+            }
+            a {
+                font-size:3.2vw;
+            }
+        }
+    }
+    /* ajuste de la seccion de ordenes de profile */
     .ordenes-container {
         .ordenes__info-container {
             grid-template-columns:1fr 1fr 1fr 1fr;
@@ -115,8 +164,11 @@
     .h-buzos {
         .h-buzos__item-container {
             grid-template-columns:1fr 1fr;
-            margin:20px;
+            margin:20px 10px;
+            height:70vw;
+            column-gap:33px;
             .h-buzos__item-box-1 {
+                height: 70vw;
                 .h-buzos__item-box-1-info {
                     b {
                         font-size:4.5vw;
@@ -125,6 +177,7 @@
                 }
             }
             .h-buzos__item-box-2 {
+                height:70vw;
                 .h-buzos__item-box-2-info {
                     b {
                         font-size:4.5vw;
@@ -197,8 +250,11 @@
     .jeans {
         .jeans__item-container {
             grid-template-columns:1fr 1fr;
-            margin:20px;
+            margin:20px 10px;
+            height:70vw;
+            column-gap:33px;
             .jeans__item-box-1 {
+                height:70vw;
                 .jeans__item-box-1-info {
                     b {
                         font-size:4.5vw;
@@ -207,6 +263,7 @@
                 }
             }
             .jeans__item-box-2 {
+                height:70vw;
                 .jeans__item-box-2-info {
                     b {
                         font-size:4.5vw;
@@ -331,8 +388,11 @@
     .n-buzos {
         .n-buzos__item-container {
             grid-template-columns:1fr 1fr;
-            margin:20px;
+            margin:20px 10px;
+            column-gap:33px;
+            height:70vw;
             .n-buzos__item-box-1 {
+                height:70vw;
                 .n-buzos__item-box-1-info {
                     b {
                         font-size:4.5vw;
@@ -341,6 +401,7 @@
                 }
             }
             .n-buzos__item-box-2 {
+                height:70vw;
                 .n-buzos__item-box-2-info {
                     b {
                         font-size:4.5vw;
