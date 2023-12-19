@@ -1,3 +1,4 @@
+/* ESTILOS PARA TABLET */
 @media only screen and (min-width:576px) and (max-width:1025px) {
     /* ajustes de el footer de las paginas */
     .copyright {
@@ -19,7 +20,7 @@
         }
         .navbar {
             display:block;
-            background-color:#180018;
+            background-color:$color-segundo;
             margin-bottom:80px;
             div {
                 .navbar-brand {

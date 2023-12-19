@@ -3,27 +3,20 @@
 .jeans {
     margin:40px 20px 20px 20px; 
     h2 {
-        text-align:right;
-        font-size:60px;
-        margin-right:60px;
-        letter-spacing:10px;
+        @include encabezado(center, 0 60px);
+        position:relative;
+        top:75px;
     }
     .jeans__item-container {
-        display:grid;
-        grid-template-columns: repeat(4,1fr );
-        height:600px;
-        column-gap:40px;
-        margin:50px;
+        background-color:$color-sexto;
+        padding:50px;
+        border-radius:12px;
+        @include grid;
         .jeans__item-box-1 {
             height:400px;
             a {
                 img {
-                    width:100%;
-                    height:100%;
-                    object-fit:cover;
-                    border-radius:25px 0;
-                    border-bottom:5px solid #70262d;
-                    border-right:5px solid #70362d;
+                    @include ajuste-img;
                 }
             }
             .jeans__item-box-1-info {
@@ -41,12 +34,7 @@
             height:400px;
             a {
                 img {
-                    width:100%;
-                    height:100%;
-                    object-fit:cover;
-                    border-radius:25px 0;
-                    border-bottom:5px solid #70262d;
-                    border-right:5px solid #70362d;
+                    @include ajuste-img;
                 }
             }
             .jeans__item-box-2-info {
@@ -64,12 +52,7 @@
             height:400px;
             a {
                 img {
-                    width:100%;
-                    height:100%;
-                    object-fit:cover;
-                    border-radius:25px 0;
-                    border-bottom:5px solid #70262d;
-                    border-right:5px solid #70362d;
+                    @include ajuste-img;
                 }
             }
             .jeans__item-box-3-info {
@@ -87,12 +70,7 @@
             height:400px;
             a {
                 img {
-                    width:100%;
-                    height:100%;
-                    object-fit:cover;
-                    border-radius:25px 0;
-                    border-bottom:5px solid #70262d;
-                    border-right:5px solid #70362d;
+                    @include ajuste-img;
                 }
             }
             .jeans__item-box-4-info {

@@ -1,32 +1,23 @@
 /* ESTILOS DE LA SECCION DE VESTIDOS */
 .vestidos {
+    margin:60px;
     h2 {
-        font-size:60px;
-        margin:50px 0 50px 30px;
-        letter-spacing:10px;
+        @include encabezado(center , 50px 0 30px 60px);
+        position:relative;
+        top:55px;
     }
     .vestidos__item-container {
         display:flex;
         justify-content:space-between;
         align-items:center;
-        margin:60px;
+        padding:40px;
+        background-color:$color-sexto;
+        border-radius:12px;
         .vestidos__item-box-1 {
-            width:600px;
-            display:grid;
-            grid-template-areas:
-            "img img info";
-            grid-template-rows:600px;
-            padding:30px;
-            column-gap:40px;
+            @include grid-area;
             a {
                 img {
-                    height:100%;
-                    width:400px;
-                    object-fit:cover;
-                    grid-area:"img";
-                    border-radius:25px 0;
-                    border-bottom:5px solid #70362d;
-                    border-right:5px solid #70362d; 
+                    @include ajuste-img-2p; 
                 }
             }
             .vestidos__item-box-1-info {
@@ -41,22 +32,10 @@
             }
         }
         .vestidos__item-box-2 {
-            width:600px;
-            display:grid;
-            grid-template-areas:
-            "img img info";
-            grid-template-rows:600px;
-            padding:30px;
-            column-gap:40px;
+            @include grid-area;
             a {
                 img {
-                    height:100%;
-                    width:400px;
-                    object-fit:cover;
-                    grid-area:"img";
-                    border-radius:25px 0;
-                    border-bottom:5px solid #70362d;
-                    border-right:5px solid #70362d; 
+                    @include ajuste-img-2p; 
                 }
             }
             .vestidos__item-box-2-info {

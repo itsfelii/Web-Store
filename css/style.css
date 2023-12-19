@@ -1,7 +1,7 @@
 /* ESTILOS GENERALES */
 /* Arreglo con los problemas de overflow de la pagina */
 body {
-  width: 100%;
+  width: 100vw;
   overflow-x: hidden;
 }
 
@@ -96,9 +96,10 @@ footer .copyright div a h3 {
 
 /* ESTILOS DEL BACKGROUND DE LAS PAGINAS */
 .background {
-  background-color: #bca79d;
+  background-color: #DCD1CB;
   color: #fff;
   background-image: url(../imagenes/background/atumn-leaves.png);
+  background-size: scale-down;
   background-repeat: repeat;
 }
 
@@ -113,12 +114,17 @@ footer .copyright div a h3 {
 
 /* ESTILOS ESPECIFICOS DE LAS ETIQUETAS DE PRECIO DE CUALQUIER PAGINA */
 .precio {
-  color: #dc753c;
+  color: #DC753C;
 }
 
 /* COLORES DE LOS ENCABEZADOS DE LAS PAGINAS */
-h2, h3 {
-  color: #70362d;
+h2 {
+  color: #A26A5F;
+  text-shadow: 0 0 8px #DCD1CB;
+}
+
+h3 {
+  color: #180018;
 }
 
 /* ESTILOS ESPECIFICOS */
@@ -132,8 +138,9 @@ y de espacio incluse para meter la guia de talles */
   /* Estilos de la guia de talles */
 }
 .carousel div h2 {
+  text-align: center;
   font-size: 60px;
-  margin: 20px 30px 0 30px;
+  margin: 0;
   letter-spacing: 10px;
 }
 .carousel div .carousel-inner .carousel-item {
@@ -144,6 +151,9 @@ y de espacio incluse para meter la guia de talles */
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 25px 0;
+  border-bottom: 5px solid #3A1C17;
+  border-right: 5px solid #3A1C17;
 }
 .carousel div .carousel-inner .carousel-item .carousel-info-container {
   justify-content: space-around;
@@ -190,15 +200,20 @@ y de espacio incluse para meter la guia de talles */
   margin: 40px 20px 20px 20px;
 }
 .ofertas h2 {
-  text-align: right;
+  text-align: center;
   font-size: 60px;
-  margin-right: 60px;
+  margin: 0 60px;
   letter-spacing: 10px;
+  position: relative;
+  top: 75px;
 }
 .ofertas .ofertas__item-container {
+  background-color: rgba(41, 38, 38, 0.5607843137);
+  padding: 50px;
+  border-radius: 12px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  height: 600px;
+  height: 500px;
   column-gap: 40px;
   margin: 50px;
 }
@@ -210,13 +225,24 @@ y de espacio incluse para meter la guia de talles */
   height: 100%;
   object-fit: cover;
   border-radius: 25px 0;
-  border-bottom: 5px solid #70262d;
-  border-right: 5px solid #70362d;
+  border-bottom: 5px solid #3A1C17;
+  border-right: 5px solid #3A1C17;
 }
 .ofertas .ofertas__item-container .ofertas__item-box-1 .ofertas__item-box-1-info {
   position: relative;
   text-align: center;
   top: -4vw;
+}
+.ofertas .ofertas__item-container .ofertas__item-box-1 .ofertas__item-box-1-info span {
+  background-color: #aaa;
+  opacity: 50%;
+}
+.ofertas .ofertas__item-container .ofertas__item-box-1 .ofertas__item-box-1-info span b {
+  text-decoration: line-through;
+  bottom: -90px;
+  right: 50px;
+  color: #000000;
+  font-size: 20px;
 }
 .ofertas .ofertas__item-container .ofertas__item-box-1 .ofertas__item-box-1-info b {
   position: absolute;
@@ -231,13 +257,24 @@ y de espacio incluse para meter la guia de talles */
   height: 100%;
   object-fit: cover;
   border-radius: 25px 0;
-  border-bottom: 5px solid #70262d;
-  border-right: 5px solid #70362d;
+  border-bottom: 5px solid #3A1C17;
+  border-right: 5px solid #3A1C17;
 }
 .ofertas .ofertas__item-container .ofertas__item-box-2 .ofertas__item-box-2-info {
   position: relative;
   text-align: center;
   top: -4vw;
+}
+.ofertas .ofertas__item-container .ofertas__item-box-2 .ofertas__item-box-2-info span {
+  background-color: #aaa;
+  opacity: 50%;
+}
+.ofertas .ofertas__item-container .ofertas__item-box-2 .ofertas__item-box-2-info span b {
+  text-decoration: line-through;
+  bottom: -90px;
+  right: 50px;
+  color: #000000;
+  font-size: 20px;
 }
 .ofertas .ofertas__item-container .ofertas__item-box-2 .ofertas__item-box-2-info b {
   position: absolute;
@@ -252,13 +289,24 @@ y de espacio incluse para meter la guia de talles */
   height: 100%;
   object-fit: cover;
   border-radius: 25px 0;
-  border-bottom: 5px solid #70262d;
-  border-right: 5px solid #70362d;
+  border-bottom: 5px solid #3A1C17;
+  border-right: 5px solid #3A1C17;
 }
 .ofertas .ofertas__item-container .ofertas__item-box-3 .ofertas__item-box-3-info {
   position: relative;
   text-align: center;
   top: -4vw;
+}
+.ofertas .ofertas__item-container .ofertas__item-box-3 .ofertas__item-box-3-info span {
+  background-color: #aaa;
+  opacity: 50%;
+}
+.ofertas .ofertas__item-container .ofertas__item-box-3 .ofertas__item-box-3-info span b {
+  text-decoration: line-through;
+  bottom: -90px;
+  right: 50px;
+  color: #000000;
+  font-size: 20px;
 }
 .ofertas .ofertas__item-container .ofertas__item-box-3 .ofertas__item-box-3-info b {
   position: absolute;
@@ -273,13 +321,24 @@ y de espacio incluse para meter la guia de talles */
   height: 100%;
   object-fit: cover;
   border-radius: 25px 0;
-  border-bottom: 5px solid #70262d;
-  border-right: 5px solid #70362d;
+  border-bottom: 5px solid #3A1C17;
+  border-right: 5px solid #3A1C17;
 }
 .ofertas .ofertas__item-container .ofertas__item-box-4 .ofertas__item-box-4-info {
   position: relative;
   text-align: center;
   top: -4vw;
+}
+.ofertas .ofertas__item-container .ofertas__item-box-4 .ofertas__item-box-4-info span {
+  background-color: #aaa;
+  opacity: 50%;
+}
+.ofertas .ofertas__item-container .ofertas__item-box-4 .ofertas__item-box-4-info span b {
+  text-decoration: line-through;
+  bottom: -90px;
+  right: 50px;
+  color: #000000;
+  font-size: 20px;
 }
 .ofertas .ofertas__item-container .ofertas__item-box-4 .ofertas__item-box-4-info b {
   position: absolute;
@@ -293,15 +352,20 @@ y de espacio incluse para meter la guia de talles */
   margin: 40px 20px 20px 20px;
 }
 .h-buzos h2 {
-  text-align: right;
+  text-align: center;
   font-size: 60px;
-  margin-right: 60px;
+  margin: 0 60px;
   letter-spacing: 10px;
+  position: relative;
+  top: 75px;
 }
 .h-buzos .h-buzos__item-container {
+  background-color: rgba(41, 38, 38, 0.5607843137);
+  padding: 50px;
+  border-radius: 12px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  height: 600px;
+  height: 500px;
   column-gap: 40px;
   margin: 50px;
 }
@@ -313,8 +377,8 @@ y de espacio incluse para meter la guia de talles */
   height: 100%;
   object-fit: cover;
   border-radius: 25px 0;
-  border-bottom: 5px solid #70262d;
-  border-right: 5px solid #70362d;
+  border-bottom: 5px solid #3A1C17;
+  border-right: 5px solid #3A1C17;
 }
 .h-buzos .h-buzos__item-container .h-buzos__item-box-1 .h-buzos__item-box-1-info {
   position: relative;
@@ -334,8 +398,8 @@ y de espacio incluse para meter la guia de talles */
   height: 100%;
   object-fit: cover;
   border-radius: 25px 0;
-  border-bottom: 5px solid #70262d;
-  border-right: 5px solid #70362d;
+  border-bottom: 5px solid #3A1C17;
+  border-right: 5px solid #3A1C17;
 }
 .h-buzos .h-buzos__item-container .h-buzos__item-box-2 .h-buzos__item-box-2-info {
   position: relative;
@@ -355,8 +419,8 @@ y de espacio incluse para meter la guia de talles */
   height: 100%;
   object-fit: cover;
   border-radius: 25px 0;
-  border-bottom: 5px solid #70262d;
-  border-right: 5px solid #70362d;
+  border-bottom: 5px solid #3A1C17;
+  border-right: 5px solid #3A1C17;
 }
 .h-buzos .h-buzos__item-container .h-buzos__item-box-3 .h-buzos__item-box-3-info {
   position: relative;
@@ -376,8 +440,8 @@ y de espacio incluse para meter la guia de talles */
   height: 100%;
   object-fit: cover;
   border-radius: 25px 0;
-  border-bottom: 5px solid #70262d;
-  border-right: 5px solid #70362d;
+  border-bottom: 5px solid #3A1C17;
+  border-right: 5px solid #3A1C17;
 }
 .h-buzos .h-buzos__item-container .h-buzos__item-box-4 .h-buzos__item-box-4-info {
   position: relative;
@@ -391,24 +455,31 @@ y de espacio incluse para meter la guia de talles */
 }
 
 /* ESTILOS DE LA SECCION REMERAS */
+.h-remeras {
+  margin: 60px;
+}
 .h-remeras h2 {
+  text-align: center;
   font-size: 60px;
-  margin: 50px 0 50px 30px;
+  margin: 50px 0 30px 0;
   letter-spacing: 10px;
+  position: relative;
+  top: 55px;
 }
 .h-remeras .h-remeras__item-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 60px;
+  padding: 40px;
+  background-color: rgba(41, 38, 38, 0.5607843137);
+  border-radius: 12px;
 }
 .h-remeras .h-remeras__item-container .h-remeras__item-box-1 {
   width: 600px;
   display: grid;
   grid-template-areas: "img img info";
   grid-template-rows: 600px;
-  padding: 30px;
-  column-gap: 40px;
+  column-gap: 25px;
 }
 .h-remeras .h-remeras__item-container .h-remeras__item-box-1 a img {
   height: 100%;
@@ -416,8 +487,8 @@ y de espacio incluse para meter la guia de talles */
   object-fit: cover;
   grid-area: "img";
   border-radius: 25px 0;
-  border-bottom: 5px solid #70362d;
-  border-right: 5px solid #70362d;
+  border-bottom: 5px solid #3A1C17;
+  border-right: 5px solid #3A1C17;
 }
 .h-remeras .h-remeras__item-container .h-remeras__item-box-1 .h-remeras__item-box-1-info {
   grid-area: "info";
@@ -434,8 +505,7 @@ y de espacio incluse para meter la guia de talles */
   display: grid;
   grid-template-areas: "img img info";
   grid-template-rows: 600px;
-  padding: 30px;
-  column-gap: 40px;
+  column-gap: 25px;
 }
 .h-remeras .h-remeras__item-container .h-remeras__item-box-2 a img {
   height: 100%;
@@ -443,8 +513,8 @@ y de espacio incluse para meter la guia de talles */
   object-fit: cover;
   grid-area: "img";
   border-radius: 25px 0;
-  border-bottom: 5px solid #70362d;
-  border-right: 5px solid #70362d;
+  border-bottom: 5px solid #3A1C17;
+  border-right: 5px solid #3A1C17;
 }
 .h-remeras .h-remeras__item-container .h-remeras__item-box-2 .h-remeras__item-box-2-info {
   grid-area: "info";
@@ -463,15 +533,20 @@ y de espacio incluse para meter la guia de talles */
   margin: 40px 20px 20px 20px;
 }
 .jeans h2 {
-  text-align: right;
+  text-align: center;
   font-size: 60px;
-  margin-right: 60px;
+  margin: 0 60px;
   letter-spacing: 10px;
+  position: relative;
+  top: 75px;
 }
 .jeans .jeans__item-container {
+  background-color: rgba(41, 38, 38, 0.5607843137);
+  padding: 50px;
+  border-radius: 12px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  height: 600px;
+  height: 500px;
   column-gap: 40px;
   margin: 50px;
 }
@@ -483,8 +558,8 @@ y de espacio incluse para meter la guia de talles */
   height: 100%;
   object-fit: cover;
   border-radius: 25px 0;
-  border-bottom: 5px solid #70262d;
-  border-right: 5px solid #70362d;
+  border-bottom: 5px solid #3A1C17;
+  border-right: 5px solid #3A1C17;
 }
 .jeans .jeans__item-container .jeans__item-box-1 .jeans__item-box-1-info {
   position: relative;
@@ -504,8 +579,8 @@ y de espacio incluse para meter la guia de talles */
   height: 100%;
   object-fit: cover;
   border-radius: 25px 0;
-  border-bottom: 5px solid #70262d;
-  border-right: 5px solid #70362d;
+  border-bottom: 5px solid #3A1C17;
+  border-right: 5px solid #3A1C17;
 }
 .jeans .jeans__item-container .jeans__item-box-2 .jeans__item-box-2-info {
   position: relative;
@@ -525,8 +600,8 @@ y de espacio incluse para meter la guia de talles */
   height: 100%;
   object-fit: cover;
   border-radius: 25px 0;
-  border-bottom: 5px solid #70262d;
-  border-right: 5px solid #70362d;
+  border-bottom: 5px solid #3A1C17;
+  border-right: 5px solid #3A1C17;
 }
 .jeans .jeans__item-container .jeans__item-box-3 .jeans__item-box-3-info {
   position: relative;
@@ -546,8 +621,8 @@ y de espacio incluse para meter la guia de talles */
   height: 100%;
   object-fit: cover;
   border-radius: 25px 0;
-  border-bottom: 5px solid #70262d;
-  border-right: 5px solid #70362d;
+  border-bottom: 5px solid #3A1C17;
+  border-right: 5px solid #3A1C17;
 }
 .jeans .jeans__item-container .jeans__item-box-4 .jeans__item-box-4-info {
   position: relative;
@@ -561,24 +636,31 @@ y de espacio incluse para meter la guia de talles */
 }
 
 /* ESTILOS DE LA SECCION DE VESTIDOS */
+.vestidos {
+  margin: 60px;
+}
 .vestidos h2 {
+  text-align: center;
   font-size: 60px;
-  margin: 50px 0 50px 30px;
+  margin: 50px 0 30px 60px;
   letter-spacing: 10px;
+  position: relative;
+  top: 55px;
 }
 .vestidos .vestidos__item-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 60px;
+  padding: 40px;
+  background-color: rgba(41, 38, 38, 0.5607843137);
+  border-radius: 12px;
 }
 .vestidos .vestidos__item-container .vestidos__item-box-1 {
   width: 600px;
   display: grid;
   grid-template-areas: "img img info";
   grid-template-rows: 600px;
-  padding: 30px;
-  column-gap: 40px;
+  column-gap: 25px;
 }
 .vestidos .vestidos__item-container .vestidos__item-box-1 a img {
   height: 100%;
@@ -586,8 +668,8 @@ y de espacio incluse para meter la guia de talles */
   object-fit: cover;
   grid-area: "img";
   border-radius: 25px 0;
-  border-bottom: 5px solid #70362d;
-  border-right: 5px solid #70362d;
+  border-bottom: 5px solid #3A1C17;
+  border-right: 5px solid #3A1C17;
 }
 .vestidos .vestidos__item-container .vestidos__item-box-1 .vestidos__item-box-1-info {
   grid-area: "info";
@@ -604,8 +686,7 @@ y de espacio incluse para meter la guia de talles */
   display: grid;
   grid-template-areas: "img img info";
   grid-template-rows: 600px;
-  padding: 30px;
-  column-gap: 40px;
+  column-gap: 25px;
 }
 .vestidos .vestidos__item-container .vestidos__item-box-2 a img {
   height: 100%;
@@ -613,8 +694,8 @@ y de espacio incluse para meter la guia de talles */
   object-fit: cover;
   grid-area: "img";
   border-radius: 25px 0;
-  border-bottom: 5px solid #70362d;
-  border-right: 5px solid #70362d;
+  border-bottom: 5px solid #3A1C17;
+  border-right: 5px solid #3A1C17;
 }
 .vestidos .vestidos__item-container .vestidos__item-box-2 .vestidos__item-box-2-info {
   grid-area: "info";
@@ -633,15 +714,20 @@ y de espacio incluse para meter la guia de talles */
   margin: 40px 20px 20px 20px;
 }
 .n-buzos h2 {
-  text-align: right;
+  text-align: center;
   font-size: 60px;
-  margin-right: 60px;
+  margin: 0 60px;
   letter-spacing: 10px;
+  position: relative;
+  top: 75px;
 }
 .n-buzos .n-buzos__item-container {
+  background-color: rgba(41, 38, 38, 0.5607843137);
+  padding: 50px;
+  border-radius: 12px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  height: 600px;
+  height: 500px;
   column-gap: 40px;
   margin: 50px;
 }
@@ -653,8 +739,8 @@ y de espacio incluse para meter la guia de talles */
   height: 100%;
   object-fit: cover;
   border-radius: 25px 0;
-  border-bottom: 5px solid #70262d;
-  border-right: 5px solid #70362d;
+  border-bottom: 5px solid #3A1C17;
+  border-right: 5px solid #3A1C17;
 }
 .n-buzos .n-buzos__item-container .n-buzos__item-box-1 .n-buzos__item-box-1-info {
   position: relative;
@@ -674,8 +760,8 @@ y de espacio incluse para meter la guia de talles */
   height: 100%;
   object-fit: cover;
   border-radius: 25px 0;
-  border-bottom: 5px solid #70262d;
-  border-right: 5px solid #70362d;
+  border-bottom: 5px solid #3A1C17;
+  border-right: 5px solid #3A1C17;
 }
 .n-buzos .n-buzos__item-container .n-buzos__item-box-2 .n-buzos__item-box-2-info {
   position: relative;
@@ -695,8 +781,8 @@ y de espacio incluse para meter la guia de talles */
   height: 100%;
   object-fit: cover;
   border-radius: 25px 0;
-  border-bottom: 5px solid #70262d;
-  border-right: 5px solid #70362d;
+  border-bottom: 5px solid #3A1C17;
+  border-right: 5px solid #3A1C17;
 }
 .n-buzos .n-buzos__item-container .n-buzos__item-box-3 .n-buzos__item-box-3-info {
   position: relative;
@@ -716,8 +802,8 @@ y de espacio incluse para meter la guia de talles */
   height: 100%;
   object-fit: cover;
   border-radius: 25px 0;
-  border-bottom: 5px solid #70262d;
-  border-right: 5px solid #70362d;
+  border-bottom: 5px solid #3A1C17;
+  border-right: 5px solid #3A1C17;
 }
 .n-buzos .n-buzos__item-container .n-buzos__item-box-4 .n-buzos__item-box-4-info {
   position: relative;
@@ -731,24 +817,31 @@ y de espacio incluse para meter la guia de talles */
 }
 
 /* ESTILOS DE LA SECCION REMERAS */
+.n-remeras {
+  margin: 60px;
+}
 .n-remeras h2 {
+  text-align: center;
   font-size: 60px;
-  margin: 50px 0 50px 30px;
+  margin: 50px 0 30px 60px;
   letter-spacing: 10px;
+  position: relative;
+  top: 55px;
 }
 .n-remeras .n-remeras__item-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 60px;
+  padding: 40px;
+  background-color: rgba(41, 38, 38, 0.5607843137);
+  border-radius: 12px;
 }
 .n-remeras .n-remeras__item-container .n-remeras__item-box-1 {
   width: 600px;
   display: grid;
   grid-template-areas: "img img info";
   grid-template-rows: 600px;
-  padding: 30px;
-  column-gap: 40px;
+  column-gap: 25px;
 }
 .n-remeras .n-remeras__item-container .n-remeras__item-box-1 a img {
   height: 100%;
@@ -756,8 +849,8 @@ y de espacio incluse para meter la guia de talles */
   object-fit: cover;
   grid-area: "img";
   border-radius: 25px 0;
-  border-bottom: 5px solid #70362d;
-  border-right: 5px solid #70362d;
+  border-bottom: 5px solid #3A1C17;
+  border-right: 5px solid #3A1C17;
 }
 .n-remeras .n-remeras__item-container .n-remeras__item-box-1 .n-remeras__item-box-1-info {
   grid-area: "info";
@@ -774,8 +867,7 @@ y de espacio incluse para meter la guia de talles */
   display: grid;
   grid-template-areas: "img img info";
   grid-template-rows: 600px;
-  padding: 30px;
-  column-gap: 40px;
+  column-gap: 25px;
 }
 .n-remeras .n-remeras__item-container .n-remeras__item-box-2 a img {
   height: 100%;
@@ -783,8 +875,8 @@ y de espacio incluse para meter la guia de talles */
   object-fit: cover;
   grid-area: "img";
   border-radius: 25px 0;
-  border-bottom: 5px solid #70362d;
-  border-right: 5px solid #70362d;
+  border-bottom: 5px solid #3A1C17;
+  border-right: 5px solid #3A1C17;
 }
 .n-remeras .n-remeras__item-container .n-remeras__item-box-2 .n-remeras__item-box-2-info {
   grid-area: "info";
@@ -938,39 +1030,43 @@ y de espacio incluse para meter la guia de talles */
     padding: 15vw 0 0 0;
   }
   h2 {
-    font-size: 10vw;
+    font-size: 10vw !important;
   }
   /* ajuste de la pagina index */
   /* ajuste de la seccion del carousel */
   .carousel {
-    width: 100vw;
+    width: 90vw;
+    margin: 5vw 5vw 5vw 1vw;
   }
   .carousel h2 {
-    margin: 10px 30px;
+    margin: 10px;
   }
   .carousel div .carousel-inner .carousel-item {
     padding: 5vw 10vw;
+    height: 120vw;
   }
   .carousel div .carousel-inner .carousel-item .carousel-info-container h5 {
-    right: 70px;
     font-size: 4.7vw;
     display: block;
   }
   .carousel div .carousel-inner .carousel-item .carousel-info-container p {
     right: 200px;
     font-size: 3.8vw;
-    top: 30px;
     display: block;
   }
   .carousel .guia-talles {
     display: none;
   }
   /* ajuste de la seccion de ofertas de la pagina index */
+  .ofertas h2 {
+    top: 10vw;
+  }
   .ofertas .ofertas__item-container {
     grid-template-columns: 1fr 1fr;
     margin: 20px 10px;
-    height: 70vw;
+    height: 80vw;
     column-gap: 33px;
+    padding: 5vw;
   }
   .ofertas .ofertas__item-container .ofertas__item-box-1 {
     height: 70vw;
@@ -979,12 +1075,18 @@ y de espacio incluse para meter la guia de talles */
     font-size: 4.5vw;
     top: -3vw;
   }
+  .ofertas .ofertas__item-container .ofertas__item-box-1 .ofertas__item-box-1-info span {
+    display: none;
+  }
   .ofertas .ofertas__item-container .ofertas__item-box-2 {
     height: 70vw;
   }
   .ofertas .ofertas__item-container .ofertas__item-box-2 .ofertas__item-box-2-info b {
     font-size: 4.5vw;
     top: -3vw;
+  }
+  .ofertas .ofertas__item-container .ofertas__item-box-2 .ofertas__item-box-2-info span {
+    display: none;
   }
   .ofertas .ofertas__item-container .ofertas__item-box-3 {
     display: none;
@@ -1043,11 +1145,15 @@ y de espacio incluse para meter la guia de talles */
   }
   /* ajuste de la pagina men */
   /* ajuste de la seccion de buzos */
+  .h-buzos h2 {
+    top: 10vw;
+  }
   .h-buzos .h-buzos__item-container {
     grid-template-columns: 1fr 1fr;
     margin: 20px 10px;
-    height: 70vw;
+    height: 80vw;
     column-gap: 33px;
+    padding: 5vw;
   }
   .h-buzos .h-buzos__item-container .h-buzos__item-box-1 {
     height: 70vw;
@@ -1070,16 +1176,21 @@ y de espacio incluse para meter la guia de talles */
     display: none;
   }
   /* ajuste de la seccion de remeras*/
+  .h-remeras {
+    margin: 0 7.5vw 40px 7.5vw;
+  }
+  .h-remeras h2 {
+    top: 13vw;
+  }
   .h-remeras .h-remeras__item-container {
     gap: 5vw;
-    margin: 40px 5vw 40px 5vw;
     width: 85vw;
+    padding: 20px;
   }
   .h-remeras .h-remeras__item-container .h-remeras__item-box-1 {
     display: block;
     height: 80vw;
     width: 50%;
-    padding: 5px;
   }
   .h-remeras .h-remeras__item-container .h-remeras__item-box-1 a img {
     width: 100%;
@@ -1096,7 +1207,6 @@ y de espacio incluse para meter la guia de talles */
   .h-remeras .h-remeras__item-container .h-remeras__item-box-2 {
     display: block;
     height: 80vw;
-    padding: 5px;
     width: 50%;
   }
   .h-remeras .h-remeras__item-container .h-remeras__item-box-2 a img {
@@ -1113,11 +1223,15 @@ y de espacio incluse para meter la guia de talles */
   }
   /* ajuste de la pagina de women */
   /* ajuste de la seccion de jeans*/
+  .jeans h2 {
+    top: 10vw;
+  }
   .jeans .jeans__item-container {
     grid-template-columns: 1fr 1fr;
     margin: 20px 10px;
-    height: 70vw;
+    height: 80vw;
     column-gap: 33px;
+    padding: 5vw;
   }
   .jeans .jeans__item-container .jeans__item-box-1 {
     height: 70vw;
@@ -1140,16 +1254,21 @@ y de espacio incluse para meter la guia de talles */
     display: none;
   }
   /* ajuste de la seccion de vestidos */
+  .vestidos {
+    margin: 0 7.5vw 40px 7.5vw;
+  }
+  .vestidos h2 {
+    top: 13vw;
+  }
   .vestidos .vestidos__item-container {
     gap: 5vw;
-    margin: 40px 5vw 40px 5vw;
     width: 85vw;
+    padding: 20px;
   }
   .vestidos .vestidos__item-container .vestidos__item-box-1 {
     display: block;
     height: 80vw;
     width: 50%;
-    padding: 5px;
   }
   .vestidos .vestidos__item-container .vestidos__item-box-1 a img {
     width: 100%;
@@ -1166,7 +1285,6 @@ y de espacio incluse para meter la guia de talles */
   .vestidos .vestidos__item-container .vestidos__item-box-2 {
     display: block;
     height: 80vw;
-    padding: 5px;
     width: 50%;
   }
   .vestidos .vestidos__item-container .vestidos__item-box-2 a img {
@@ -1183,16 +1301,21 @@ y de espacio incluse para meter la guia de talles */
   }
   /* Ajuste de la pagina de childs */
   /* Ajuste de la seccion de buzos */
+  .n-remeras {
+    margin: 0 7.5vw 40px 7.5vw;
+  }
+  .n-remeras h2 {
+    top: 13vw;
+  }
   .n-remeras .n-remeras__item-container {
     gap: 5vw;
-    margin: 40px 5vw 40px 5vw;
     width: 85vw;
+    padding: 20px;
   }
   .n-remeras .n-remeras__item-container .n-remeras__item-box-1 {
     display: block;
     height: 80vw;
     width: 50%;
-    padding: 5px;
   }
   .n-remeras .n-remeras__item-container .n-remeras__item-box-1 a img {
     width: 100%;
@@ -1209,7 +1332,6 @@ y de espacio incluse para meter la guia de talles */
   .n-remeras .n-remeras__item-container .n-remeras__item-box-2 {
     display: block;
     height: 80vw;
-    padding: 5px;
     width: 50%;
   }
   .n-remeras .n-remeras__item-container .n-remeras__item-box-2 a img {
@@ -1225,11 +1347,15 @@ y de espacio incluse para meter la guia de talles */
     font-size: 5vw;
   }
   /* Ajuste de la seccion de buzos */
+  .n-buzos h2 {
+    top: 10vw;
+  }
   .n-buzos .n-buzos__item-container {
     grid-template-columns: 1fr 1fr;
     margin: 20px 10px;
     column-gap: 33px;
-    height: 70vw;
+    height: 80vw;
+    padding: 5vw;
   }
   .n-buzos .n-buzos__item-container .n-buzos__item-box-1 {
     height: 70vw;
@@ -1252,6 +1378,7 @@ y de espacio incluse para meter la guia de talles */
     display: none;
   }
 }
+/* ESTILOS PARA TABLET */
 @media only screen and (min-width: 576px) and (max-width: 1025px) {
   /* ajustes de el footer de las paginas */
   .copyright p {
