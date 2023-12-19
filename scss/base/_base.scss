@@ -69,13 +69,13 @@ header{
 footer {
     background-color:$color-sexto;
     margin:80px 0 0 0;
-    padding:40px 0 0 0;
+    padding:25px 0 0 0;
     height:30vh;
     display:flex;
     flex-direction:column;
     align-items:center;
     .redes-sociales {
-        height:80px;
+        height:30px;
         display:flex;
         gap:40px;
         justify-content:center;
@@ -86,7 +86,7 @@ footer {
         align-items:center;
         justify-content:space-between;
         height:80px;
-        margin:40px;
+        margin:20px 40px 0 40px;
         div {
             display:flex;
             gap:40px;
@@ -126,5 +126,5 @@ h2 {
     text-shadow:0 0 8px $color-tercero;
 }
 h3 {
-    color: $color-segundo;
+    color: $color-tercero;
 }

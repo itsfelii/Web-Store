@@ -2,17 +2,22 @@
 /* ESTILOS PARA MOBILE */
 @media only screen and (min-width:320px) and (max-width:575px) {
     /* ajustes de el footer de las paginas */
-    .copyright {
-        p {
-            font-size:2vw;
-        }
-        div {
-            a {
-                h3 {
-                    font-size:1.5vw;
+    footer {
+        height:40vh;
+        padding:6vw;
+        .copyright {
+            margin: 20px 0;
+            p {
+                font-size:2.4vw;
+            }
+            div {
+                .copyright-terminos {
+                    h3 {
+                        font-size:2vw;
+                    }
                 }
             }
-        }
+        }  
     }
     /* ajuste del nav en las paginas */
     header {

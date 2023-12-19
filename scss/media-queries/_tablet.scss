@@ -3,12 +3,12 @@
     /* ajustes de el footer de las paginas */
     .copyright {
         p {
-            font-size:2vw;
+            font-size:1.5vw;
         }
         div {
-            a {
+            .copyright-terminos {
                 h3 {
-                    font-size:1.5vw;
+                    font-size:1.3vw;
                 }
             }
         }
@@ -71,7 +71,7 @@
     /* ajuste de la seccion de ofertas de la pagina index */
     .ofertas {
         h2 {
-            top:10vw;
+            top:7vw;
         }
         .ofertas__item-container {
             grid-template-columns:1fr 1fr;
