@@ -3,17 +3,19 @@
 @media only screen and (min-width:320px) and (max-width:575px) {
     /* ajustes de el footer de las paginas */
     footer {
-        height:40vh;
-        padding:6vw;
+        height:35vh;
+        padding:3vh;
+        .redes-sociales {
+            display:none; // se manda al menu hamburguesa donde hay mas espacio 
+        }
         .copyright {
-            margin: 20px 0;
             p {
-                font-size:2.4vw;
+                font-size:3vw;
             }
             div {
                 .copyright-terminos {
                     h3 {
-                        font-size:2vw;
+                        font-size:1.8vw;
                     }
                 }
             }
