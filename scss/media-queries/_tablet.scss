@@ -24,7 +24,9 @@
             margin-bottom:80px;
             div {
                 .navbar-brand {
-                    color:#fff;
+                    font-family:'copperplate' , fantasy;
+                    letter-spacing:4px;
+                    animation: scaleUp 4s cubic-bezier(0.390, 1.630, 0.565, -0.590) infinite alternate-reverse both;
                 }
             }
         }
@@ -32,30 +34,30 @@
     body {
         padding:15vw 0 0 0;
     }
-    h2 { 
-        font-size:10vw; // no esta funcionando 
+    h2{ 
+        font-size:10vw !important; // no esta funcionando 
     }
     /* ajuste de la pagina index */
     /* ajuste de la seccion del carousel */
     .carousel {
-        width:100vw;
+        width:90vw;
+        margin:5vw 5vw 5vw 1vw;
         h2 {
-            margin:10px 30px;
+            margin:10px ;
         }
         div {
             .carousel-inner {
                 .carousel-item {
                     padding:5vw 10vw;
+                    height:120vw;
                     .carousel-info-container {
                         h5 {
-                            right:70px;
                             font-size:4.7vw;
                             display:block;
                         }
                         p {
                             right: 200px;
                             font-size:3.8vw;
-                            top:30px;
                             display:block;
                         }
                     }
@@ -68,17 +70,24 @@
     }
     /* ajuste de la seccion de ofertas de la pagina index */
     .ofertas {
+        h2 {
+            top:10vw;
+        }
         .ofertas__item-container {
             grid-template-columns:1fr 1fr;
             margin:20px 10px;
-            height:70vw;
-            column-gap:60px;
+            height:80vw;
+            column-gap:33px;
+            padding:5vw;
             .ofertas__item-box-1 {
                 height:70vw;
                 .ofertas__item-box-1-info {
                     b {
                         font-size:4.5vw;
                         top:-3vw;
+                    }
+                    span {
+                        display:none;
                     }
                 }
             }
@@ -88,6 +97,9 @@
                     b {
                         font-size:4.5vw;
                         top:-3vw;
+                    }
+                    span {
+                        display:none;
                     }
                 }
             }
@@ -100,7 +112,51 @@
         }
     }
     /* ajuste de la pagina profile */
-    /* ajuste de la seccion de perfil */
+    /* ajuste de la seccion de perfil de profile*/
+    .perfil-container {
+        margin:30px 15px;
+        .perfil__info-container {
+            padding:12px;
+            .perfil__info-username-container {
+                h3 {
+                    width:45%;
+                    font-size:5vw;
+                }
+                .perfil__info-username {
+                    width:55%;
+                    font-size:2.7vw;
+                }
+            }
+            .perfil__info-email-container {
+                h3 {
+                    width:45%;
+                    font-size:5vw;
+                }
+                .perfil__info-email {
+                    width:55%;
+                    font-size:2.7vw;
+                }
+            }
+            .perfil__info-password-container {
+                h3 {
+                    width:45%;
+                    font-size:4.5vw;
+                }
+                .perfil__info-password {
+                    width:55%;
+                    font-size:2.7vw;
+                }
+            }
+        }
+        .sign-up-container {
+            b {
+                font-size:3.2vw;
+            }
+            a {
+                font-size:3.2vw;
+            }
+        }
+    }
     /* ajuste de la seccion de ordenes de profile */
     .ordenes-container {
         .ordenes__info-container {
@@ -117,11 +173,15 @@
     /* ajuste de la pagina men */
     /* ajuste de la seccion de buzos */
     .h-buzos {
+        h2 {
+            top:7vw;
+        }
         .h-buzos__item-container {
             grid-template-columns:1fr 1fr;
             margin:20px 10px;
-            height:70vw;
-            column-gap:55px;
+            height:80vw;
+            column-gap:33px;
+            padding:5vw;
             .h-buzos__item-box-1 {
                 height: 70vw;
                 .h-buzos__item-box-1-info {
@@ -150,15 +210,18 @@
     }
     /* ajuste de la seccion de remeras*/
     .h-remeras {
+        margin:0 7.5vw 40px 7.5vw;
+        h2 {
+            top:8vw;
+        }
         .h-remeras__item-container { 
             gap: 5vw;
-            margin:40px 5vw 40px 5vw;
             width:85vw;
+            padding:30px;
             .h-remeras__item-box-1 {
                 display:block;
                 height:80vw;
                 width:50%;
-                padding:5px;
                 a {
                     img {
                         width:100%;
@@ -170,7 +233,7 @@
                     }
                     b {
                         position:relative;
-                        bottom:42px;
+                        bottom:7vw;
                         left:30%;
                         font-size:5vw;
                     }
@@ -179,7 +242,6 @@
             .h-remeras__item-box-2 {
                 display:block;
                 height: 80vw;
-                padding:5px;
                 width:50%;
                 a {
                     img {
@@ -192,7 +254,7 @@
                     }
                     b {
                         position:relative;
-                        bottom:42px;
+                        bottom:7vw;
                         left:30%;
                         font-size:5vw;
                     }
@@ -203,11 +265,15 @@
     /* ajuste de la pagina de women */
     /* ajuste de la seccion de jeans*/
     .jeans {
+        h2 {
+            top:7vw;
+        }
         .jeans__item-container {
             grid-template-columns:1fr 1fr;
             margin:20px 10px;
-            height:70vw;
+            height:80vw;
             column-gap:33px;
+            padding:5vw;
             .jeans__item-box-1 {
                 height:70vw;
                 .jeans__item-box-1-info {
@@ -236,15 +302,18 @@
     }
     /* ajuste de la seccion de vestidos */
     .vestidos {
+        margin:0 7.5vw 40px 7.5vw;
+        h2 {
+            top:8vw;
+        }
         .vestidos__item-container { 
             gap: 5vw;
-            margin:40px 5vw 40px 5vw;
             width:85vw;
+            padding:30px;
             .vestidos__item-box-1 {
                 display:block;
                 height:80vw;
                 width:50%;
-                padding:5px;
                 a {
                     img {
                         width:100%;
@@ -256,7 +325,7 @@
                     }
                     b {
                         position:relative;
-                        bottom:42px;
+                        bottom:7vw;
                         left:30%;
                         font-size:5vw;
                     }
@@ -265,7 +334,6 @@
             .vestidos__item-box-2 {
                 display:block;
                 height: 80vw;
-                padding:5px;
                 width:50%;
                 a {
                     img {
@@ -278,7 +346,7 @@
                     }
                     b {
                         position:relative;
-                        bottom:42px;
+                        bottom:7vw;
                         left:30%;
                         font-size:5vw;
                     }
@@ -289,15 +357,18 @@
     /* Ajuste de la pagina de childs */
     /* Ajuste de la seccion de buzos */
     .n-remeras {
+        margin:0 7.5vw 40px 7.5vw;
+        h2 {
+            top:8vw;
+        }
         .n-remeras__item-container { 
             gap: 5vw;
-            margin:40px 5vw 40px 5vw;
             width:85vw;
+            padding:30px;
             .n-remeras__item-box-1 {
                 display:block;
                 height:80vw;
                 width:50%;
-                padding:5px;
                 a {
                     img {
                         width:100%;
@@ -309,7 +380,7 @@
                     }
                     b {
                         position:relative;
-                        bottom:42px;
+                        bottom:7vw;
                         left:30%;
                         font-size:5vw;
                     }
@@ -318,7 +389,6 @@
             .n-remeras__item-box-2 {
                 display:block;
                 height: 80vw;
-                padding:5px;
                 width:50%;
                 a {
                     img {
@@ -331,7 +401,7 @@
                     }
                     b {
                         position:relative;
-                        bottom:42px;
+                        bottom:7vw;
                         left:30%;
                         font-size:5vw;
                     }
@@ -341,11 +411,15 @@
     }
     /* Ajuste de la seccion de buzos */
     .n-buzos {
+        h2 {
+            top:7vw;
+        }
         .n-buzos__item-container {
             grid-template-columns:1fr 1fr;
             margin:20px 10px;
             column-gap:33px;
-            height:70vw;
+            height:80vw;
+            padding:5vw;
             .n-buzos__item-box-1 {
                 height:70vw;
                 .n-buzos__item-box-1-info {

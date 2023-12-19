@@ -42,4 +42,12 @@
     column-gap:40px;
     margin:50px;
 }
-//animacion de nav links 
+//animacion scaleUp
+@keyframes scaleUp {
+    0% {
+        transform:scale(.9);
+    }
+    100% {
+        transform:scale(1.1);
+    }
+}

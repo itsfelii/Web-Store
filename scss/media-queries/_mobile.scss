@@ -25,7 +25,9 @@
             margin-bottom:80px;
             div {
                 .navbar-brand {
-                    color:#fff;
+                    font-family:'copperplate' , fantasy;
+                    letter-spacing:4px;
+                    animation: scaleUp 4s cubic-bezier(0.390, 1.630, 0.565, -0.590) infinite alternate-reverse both;
                 }
             }
         }

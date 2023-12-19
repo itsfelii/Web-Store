@@ -1,3 +1,11 @@
+@keyframes scaleUp {
+  0% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
 /* ESTILOS GENERALES */
 /* Arreglo con los problemas de overflow de la pagina */
 body {
@@ -48,6 +56,7 @@ header .nav a h1 {
   color: #fff;
   font-family: "copperplate", fantasy;
   letter-spacing: 4px;
+  animation: scaleUp 4s cubic-bezier(0.39, 1.63, 0.565, -0.59) infinite alternate-reverse both;
 }
 header .nav ul {
   list-style-type: none;
@@ -56,14 +65,24 @@ header .nav ul {
   margin-right: 40px;
   margin-top: 20px;
 }
+header .nav ul li {
+  transition: transform 0.3s;
+  transition-timing-function: ease-in;
+}
 header .nav ul li a {
   text-decoration: none;
   color: #fff;
 }
+header .nav ul li:hover {
+  transform: scale(1.17);
+}
 
 /* ESTILOS DEL FOOTER DE LAS PAGINAS */
 footer {
-  height: 90px;
+  background-color: rgba(41, 38, 38, 0.5607843137);
+  margin: 80px 0 0 0;
+  padding: 40px 0 0 0;
+  height: 30vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -90,7 +109,7 @@ footer .copyright div a {
   text-decoration: none;
 }
 footer .copyright div a h3 {
-  color: rgba(230, 230, 230, 0.651);
+  color: #DC753C;
   font-size: 17px;
 }
 
@@ -1024,7 +1043,9 @@ y de espacio incluse para meter la guia de talles */
     margin-bottom: 80px;
   }
   header .navbar div .navbar-brand {
-    color: #fff;
+    font-family: "copperplate", fantasy;
+    letter-spacing: 4px;
+    animation: scaleUp 4s cubic-bezier(0.39, 1.63, 0.565, -0.59) infinite alternate-reverse both;
   }
   body {
     padding: 15vw 0 0 0;
@@ -1397,45 +1418,51 @@ y de espacio incluse para meter la guia de talles */
     margin-bottom: 80px;
   }
   header .navbar div .navbar-brand {
-    color: #fff;
+    font-family: "copperplate", fantasy;
+    letter-spacing: 4px;
+    animation: scaleUp 4s cubic-bezier(0.39, 1.63, 0.565, -0.59) infinite alternate-reverse both;
   }
   body {
     padding: 15vw 0 0 0;
   }
   h2 {
-    font-size: 10vw;
+    font-size: 10vw !important;
   }
   /* ajuste de la pagina index */
   /* ajuste de la seccion del carousel */
   .carousel {
-    width: 100vw;
+    width: 90vw;
+    margin: 5vw 5vw 5vw 1vw;
   }
   .carousel h2 {
-    margin: 10px 30px;
+    margin: 10px;
   }
   .carousel div .carousel-inner .carousel-item {
     padding: 5vw 10vw;
+    height: 120vw;
   }
   .carousel div .carousel-inner .carousel-item .carousel-info-container h5 {
-    right: 70px;
     font-size: 4.7vw;
     display: block;
   }
   .carousel div .carousel-inner .carousel-item .carousel-info-container p {
     right: 200px;
     font-size: 3.8vw;
-    top: 30px;
     display: block;
   }
   .carousel .guia-talles {
     display: none;
   }
   /* ajuste de la seccion de ofertas de la pagina index */
+  .ofertas h2 {
+    top: 10vw;
+  }
   .ofertas .ofertas__item-container {
     grid-template-columns: 1fr 1fr;
     margin: 20px 10px;
-    height: 70vw;
-    column-gap: 60px;
+    height: 80vw;
+    column-gap: 33px;
+    padding: 5vw;
   }
   .ofertas .ofertas__item-container .ofertas__item-box-1 {
     height: 70vw;
@@ -1444,12 +1471,18 @@ y de espacio incluse para meter la guia de talles */
     font-size: 4.5vw;
     top: -3vw;
   }
+  .ofertas .ofertas__item-container .ofertas__item-box-1 .ofertas__item-box-1-info span {
+    display: none;
+  }
   .ofertas .ofertas__item-container .ofertas__item-box-2 {
     height: 70vw;
   }
   .ofertas .ofertas__item-container .ofertas__item-box-2 .ofertas__item-box-2-info b {
     font-size: 4.5vw;
     top: -3vw;
+  }
+  .ofertas .ofertas__item-container .ofertas__item-box-2 .ofertas__item-box-2-info span {
+    display: none;
   }
   .ofertas .ofertas__item-container .ofertas__item-box-3 {
     display: none;
@@ -1458,7 +1491,43 @@ y de espacio incluse para meter la guia de talles */
     display: none;
   }
   /* ajuste de la pagina profile */
-  /* ajuste de la seccion de perfil */
+  /* ajuste de la seccion de perfil de profile*/
+  .perfil-container {
+    margin: 30px 15px;
+  }
+  .perfil-container .perfil__info-container {
+    padding: 12px;
+  }
+  .perfil-container .perfil__info-container .perfil__info-username-container h3 {
+    width: 45%;
+    font-size: 5vw;
+  }
+  .perfil-container .perfil__info-container .perfil__info-username-container .perfil__info-username {
+    width: 55%;
+    font-size: 2.7vw;
+  }
+  .perfil-container .perfil__info-container .perfil__info-email-container h3 {
+    width: 45%;
+    font-size: 5vw;
+  }
+  .perfil-container .perfil__info-container .perfil__info-email-container .perfil__info-email {
+    width: 55%;
+    font-size: 2.7vw;
+  }
+  .perfil-container .perfil__info-container .perfil__info-password-container h3 {
+    width: 45%;
+    font-size: 4.5vw;
+  }
+  .perfil-container .perfil__info-container .perfil__info-password-container .perfil__info-password {
+    width: 55%;
+    font-size: 2.7vw;
+  }
+  .perfil-container .sign-up-container b {
+    font-size: 3.2vw;
+  }
+  .perfil-container .sign-up-container a {
+    font-size: 3.2vw;
+  }
   /* ajuste de la seccion de ordenes de profile */
   .ordenes-container .ordenes__info-container {
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -1472,11 +1541,15 @@ y de espacio incluse para meter la guia de talles */
   }
   /* ajuste de la pagina men */
   /* ajuste de la seccion de buzos */
+  .h-buzos h2 {
+    top: 7vw;
+  }
   .h-buzos .h-buzos__item-container {
     grid-template-columns: 1fr 1fr;
     margin: 20px 10px;
-    height: 70vw;
-    column-gap: 55px;
+    height: 80vw;
+    column-gap: 33px;
+    padding: 5vw;
   }
   .h-buzos .h-buzos__item-container .h-buzos__item-box-1 {
     height: 70vw;
@@ -1499,16 +1572,21 @@ y de espacio incluse para meter la guia de talles */
     display: none;
   }
   /* ajuste de la seccion de remeras*/
+  .h-remeras {
+    margin: 0 7.5vw 40px 7.5vw;
+  }
+  .h-remeras h2 {
+    top: 8vw;
+  }
   .h-remeras .h-remeras__item-container {
     gap: 5vw;
-    margin: 40px 5vw 40px 5vw;
     width: 85vw;
+    padding: 30px;
   }
   .h-remeras .h-remeras__item-container .h-remeras__item-box-1 {
     display: block;
     height: 80vw;
     width: 50%;
-    padding: 5px;
   }
   .h-remeras .h-remeras__item-container .h-remeras__item-box-1 a img {
     width: 100%;
@@ -1518,14 +1596,13 @@ y de espacio incluse para meter la guia de talles */
   }
   .h-remeras .h-remeras__item-container .h-remeras__item-box-1 .h-remeras__item-box-1-info b {
     position: relative;
-    bottom: 42px;
+    bottom: 7vw;
     left: 30%;
     font-size: 5vw;
   }
   .h-remeras .h-remeras__item-container .h-remeras__item-box-2 {
     display: block;
     height: 80vw;
-    padding: 5px;
     width: 50%;
   }
   .h-remeras .h-remeras__item-container .h-remeras__item-box-2 a img {
@@ -1536,17 +1613,21 @@ y de espacio incluse para meter la guia de talles */
   }
   .h-remeras .h-remeras__item-container .h-remeras__item-box-2 .h-remeras__item-box-2-info b {
     position: relative;
-    bottom: 42px;
+    bottom: 7vw;
     left: 30%;
     font-size: 5vw;
   }
   /* ajuste de la pagina de women */
   /* ajuste de la seccion de jeans*/
+  .jeans h2 {
+    top: 7vw;
+  }
   .jeans .jeans__item-container {
     grid-template-columns: 1fr 1fr;
     margin: 20px 10px;
-    height: 70vw;
+    height: 80vw;
     column-gap: 33px;
+    padding: 5vw;
   }
   .jeans .jeans__item-container .jeans__item-box-1 {
     height: 70vw;
@@ -1569,16 +1650,21 @@ y de espacio incluse para meter la guia de talles */
     display: none;
   }
   /* ajuste de la seccion de vestidos */
+  .vestidos {
+    margin: 0 7.5vw 40px 7.5vw;
+  }
+  .vestidos h2 {
+    top: 8vw;
+  }
   .vestidos .vestidos__item-container {
     gap: 5vw;
-    margin: 40px 5vw 40px 5vw;
     width: 85vw;
+    padding: 30px;
   }
   .vestidos .vestidos__item-container .vestidos__item-box-1 {
     display: block;
     height: 80vw;
     width: 50%;
-    padding: 5px;
   }
   .vestidos .vestidos__item-container .vestidos__item-box-1 a img {
     width: 100%;
@@ -1588,14 +1674,13 @@ y de espacio incluse para meter la guia de talles */
   }
   .vestidos .vestidos__item-container .vestidos__item-box-1 .vestidos__item-box-1-info b {
     position: relative;
-    bottom: 42px;
+    bottom: 7vw;
     left: 30%;
     font-size: 5vw;
   }
   .vestidos .vestidos__item-container .vestidos__item-box-2 {
     display: block;
     height: 80vw;
-    padding: 5px;
     width: 50%;
   }
   .vestidos .vestidos__item-container .vestidos__item-box-2 a img {
@@ -1606,22 +1691,27 @@ y de espacio incluse para meter la guia de talles */
   }
   .vestidos .vestidos__item-container .vestidos__item-box-2 .vestidos__item-box-2-info b {
     position: relative;
-    bottom: 42px;
+    bottom: 7vw;
     left: 30%;
     font-size: 5vw;
   }
   /* Ajuste de la pagina de childs */
   /* Ajuste de la seccion de buzos */
+  .n-remeras {
+    margin: 0 7.5vw 40px 7.5vw;
+  }
+  .n-remeras h2 {
+    top: 8vw;
+  }
   .n-remeras .n-remeras__item-container {
     gap: 5vw;
-    margin: 40px 5vw 40px 5vw;
     width: 85vw;
+    padding: 30px;
   }
   .n-remeras .n-remeras__item-container .n-remeras__item-box-1 {
     display: block;
     height: 80vw;
     width: 50%;
-    padding: 5px;
   }
   .n-remeras .n-remeras__item-container .n-remeras__item-box-1 a img {
     width: 100%;
@@ -1631,14 +1721,13 @@ y de espacio incluse para meter la guia de talles */
   }
   .n-remeras .n-remeras__item-container .n-remeras__item-box-1 .n-remeras__item-box-1-info b {
     position: relative;
-    bottom: 42px;
+    bottom: 7vw;
     left: 30%;
     font-size: 5vw;
   }
   .n-remeras .n-remeras__item-container .n-remeras__item-box-2 {
     display: block;
     height: 80vw;
-    padding: 5px;
     width: 50%;
   }
   .n-remeras .n-remeras__item-container .n-remeras__item-box-2 a img {
@@ -1649,16 +1738,20 @@ y de espacio incluse para meter la guia de talles */
   }
   .n-remeras .n-remeras__item-container .n-remeras__item-box-2 .n-remeras__item-box-2-info b {
     position: relative;
-    bottom: 42px;
+    bottom: 7vw;
     left: 30%;
     font-size: 5vw;
   }
   /* Ajuste de la seccion de buzos */
+  .n-buzos h2 {
+    top: 7vw;
+  }
   .n-buzos .n-buzos__item-container {
     grid-template-columns: 1fr 1fr;
     margin: 20px 10px;
     column-gap: 33px;
-    height: 70vw;
+    height: 80vw;
+    padding: 5vw;
   }
   .n-buzos .n-buzos__item-container .n-buzos__item-box-1 {
     height: 70vw;
