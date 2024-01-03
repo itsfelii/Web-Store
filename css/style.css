@@ -57,6 +57,11 @@ header .nav a h1 {
   font-family: "copperplate", fantasy;
   letter-spacing: 4px;
   animation: scaleUp 4s cubic-bezier(0.39, 1.63, 0.565, -0.59) infinite alternate-reverse both;
+  transition:all 1s;
+}
+header .nav a h1:hover {
+  animation: none;
+  transform: scale(1.1);
 }
 header .nav ul {
   list-style-type: none;
@@ -66,7 +71,7 @@ header .nav ul {
   margin-top: 20px;
 }
 header .nav ul li {
-  transition: transform 0.3s;
+  transition: transform 0.2s;
   transition-timing-function: ease-in;
 }
 header .nav ul li a {
@@ -74,7 +79,7 @@ header .nav ul li a {
   color: #fff;
 }
 header .nav ul li:hover {
-  transform: scale(1.17);
+  transform: scale(1.1);
 }
 
 /* ESTILOS DEL FOOTER DE LAS PAGINAS */
@@ -115,11 +120,8 @@ footer .copyright div a h3 {
 
 /* ESTILOS DEL BACKGROUND DE LAS PAGINAS */
 .background {
-  background-color: #DCD1CB;
+  background-color: #aeaeae96;
   color: #fff;
-  background-image: url(../imagenes/background/atumn-leaves.png);
-  background-size: scale-down;
-  background-repeat: repeat;
 }
 
 /* ESTILOS ESPECIFICO DEL BACKGROUND DE LA PAGINA PROFILE */
@@ -152,7 +154,7 @@ ESTILOS PISADOS DE BOOSTRAP */
 /* Hace que las imagenes de no ocupen toda la pantalla 
 y de espacio incluse para meter la guia de talles */
 .carousel {
-  width: 800px;
+  width: 750px;
   margin: 5px;
   /* Estilos de la guia de talles */
 }
@@ -163,7 +165,7 @@ y de espacio incluse para meter la guia de talles */
   letter-spacing: 10px;
 }
 .carousel div .carousel-inner .carousel-item {
-  height: 700px;
+  height: 620px;
   padding: 60px 100px;
 }
 .carousel div .carousel-inner .carousel-item a img {
@@ -187,8 +189,8 @@ y de espacio incluse para meter la guia de talles */
 }
 .carousel .guia-talles {
   position: absolute;
-  right: -400px;
-  top: 420px;
+  right: -480px;
+  top: 320px;
   background-color: rgba(41, 38, 38, 0.5607843137);
   border-radius: 12px;
   padding: 5px;
@@ -197,6 +199,7 @@ y de espacio incluse para meter la guia de talles */
   font-size: 30px;
   letter-spacing: 10px;
   margin: 0 40px;
+  color:#000;
 }
 .carousel .guia-talles .guia-talles__item-grid-container {
   display: grid;
