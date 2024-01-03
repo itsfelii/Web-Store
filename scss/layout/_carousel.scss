@@ -5,7 +5,7 @@ ESTILOS PISADOS DE BOOSTRAP */
 y de espacio incluse para meter la guia de talles */
 
 .carousel {
-    width:800px;
+    width:750px;
     margin:5px;
     div {
         h2 {
@@ -13,7 +13,7 @@ y de espacio incluse para meter la guia de talles */
         }
         .carousel-inner {
             .carousel-item {
-                height:700px;
+                height:620px;
                 padding:60px 100px;
                 a {
                     img {
@@ -46,6 +46,7 @@ y de espacio incluse para meter la guia de talles */
             font-size:30px;
             letter-spacing: 10px;
             margin:0 40px;
+            color:#000;
         }
         .guia-talles__item-grid-container {
             display: grid;
